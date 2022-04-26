@@ -1,17 +1,24 @@
-let isliked = true;
-let heart = $(".fat-solid");
+// TODO : MAKE LIKE WORK FOR EACH POST
+$(document).ready(function(){
+    // LIKER POST
+    $("#heart").click(function(){
+      if($("#heart").hasClass("liked")){
+        $("#heart").html('<i class="fa fa-heart-o fa-2xl" aria-hidden="true"></i>');
+        $("#heart").removeClass("liked");
+      }else{
+        $("#heart").html('<i class="fa fa-heart fa-2xl" aria-hidden="true"></i>');
+        $("#heart").addClass("liked");
+      }
+    });
 
-  $('.fat-solid').contextmenu(function () {
-   
-    if (isliked) {
-        heart.removeClass("unlike");
-        heart.addClass("like");
-    }
-    else {
-        heart.removeClass("like");
-        heart.addClass("unlike");
-    }
-    isliked = !isliked;
-    return false;
+
+    $('input:checkbox').click(function() {
+        $('input:checkbox').not(this).prop('checked', false);
+    });
+
+
     
-});
+
+  });
+
+ 
