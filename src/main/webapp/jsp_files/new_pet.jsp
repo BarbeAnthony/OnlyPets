@@ -22,7 +22,7 @@
     <div>
 
         <label for="especeChoice"> Espèce </label>
-        <select id="especeChoice" onchange="displayInfo();">
+        <select id="especeChoice">
             <option value="chat">Chat</option>
             <option value="chien">Chien</option>
             <option value="NAC">NAC</option>

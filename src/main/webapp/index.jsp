@@ -18,7 +18,7 @@
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <title> OnlyPets</title>
+    <title id="mainTitle"> oNLYpETS</title>
 </head>
 <body>
 
@@ -79,8 +79,8 @@
 
                 <form method="get" action="" id="filter">
                     <label for="espece"> Espèce </label> <br>
-                    <select id="espece" class="form-select" multiple aria-label="selector">
-                        <option value="" > --selection--</option>
+                    <select class="form-select  form-select-lg mb-3 " multiple aria-label=".form-select-lg example">
+                        <option selected> -- Selection --</option>
                         <option value="chats"> Chats</option>
                         <option value="chiens"> Chiens</option>
                         <option value="NAC">NAC</option>
