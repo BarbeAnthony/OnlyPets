@@ -12,7 +12,7 @@ public class Servlet_New_Post extends HttpServlet {
         //TODO pré remplissage du formulaire de création de post si appelé depuis "my_account.jsp"
         //TODO menus du formulaire adapté à l'utilisateur (liste de ses animaux)
     }
-
+// test les potes
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
