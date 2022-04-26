@@ -20,7 +20,9 @@
         <input type="text" name="name" id="name" required="required">
     </div>
     <div>
-        <select id="speceChoice" onchange="displayInfo();">
+
+        <label for="especeChoice"> Espèce </label> <br>
+        <select id="especeChoice" onchange="displayInfo();">
             <option value="chat">Chat</option>
             <option value="chien">Chien</option>
             <option value="NAC">NAC</option>
