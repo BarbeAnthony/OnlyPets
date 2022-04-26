@@ -14,7 +14,7 @@ public class Servlet_Login extends HttpServlet {
         //TODO Création de cookie de connexion
         //TODO Renvoie vers index.jsp en étant connecté, ou vers user_login.jsp avec message d'erreur si identifiants incorrects
 
-        //je rajoute un commentaire pour le test
+
     }
 
     @Override
