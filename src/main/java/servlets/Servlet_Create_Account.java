@@ -24,8 +24,7 @@ public class Servlet_Create_Account extends HttpServlet {
          */
         session.setAttribute("username", username);
 
-        //renvoi à la page de gestion du compte
-        this.getServletContext().getRequestDispatcher("../index.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/jsp_files/my_account.jsp").forward(request, response);
     }
 
     @Override
