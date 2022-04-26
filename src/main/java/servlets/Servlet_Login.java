@@ -13,8 +13,6 @@ public class Servlet_Login extends HttpServlet {
         //TODO cryptage du mdp saisi pour comparer avec le mdp de la BDD (si mdp enregistrés cryptés)
         //TODO Création de cookie de connexion
         //TODO Renvoie vers index.jsp en étant connecté, ou vers user_login.jsp avec message d'erreur si identifiants incorrects
-
-        //je rajoute un commentaire pour le test
     }
 
     @Override
