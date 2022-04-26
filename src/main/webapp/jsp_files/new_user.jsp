@@ -1,16 +1,32 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ayse
-  Date: 25/04/2022
-  Time: 13:56
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Créer un compte</title>
 </head>
 <body>
-
+<h1> Formulaire d'inscription </h1>
+<form action="Servlet_Create_Account" method="post">
+    <h2> Mes identifiants </h2>
+    <div>
+        <label for="username"> Pseudo </label>
+        <input type="text" name="username" id="username">
+    </div>
+    <div>
+        <label for="email"> Email </label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="password1"> Mot de passe (8 characters minimum) <input type="password" name="password1" id="password1" minlength="8" value="" class="form-control" required="required" ></label>
+        <br>
+        <label for="password1"> Confirmation du mot de passe <input type="password" name="password2" id="password2" minlength="8" value="" class="form-control" required="required" disabled="true"></label>
+        <div class="alert" id="password_alert" role="alert"> Mot de passe non identique</div>
+    </div>
+    <div>
+        <input type="submit" value=" Valider ">
+    </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../javascripts/new_user.js"></script>
 </body>
 </html>
