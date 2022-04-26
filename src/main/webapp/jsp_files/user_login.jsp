@@ -14,9 +14,9 @@
 <h1>Login</h1>
 <br>
 <form action="../Servlet_Login" method="post">
-    <label for="email"> Saisir une adresse email :</label> <input type="email" id="email" name="email">
+    <label for="email"> Saisir une adresse email :</label> <input type="email" id="email" name="email" required="required">
     <br>
-    <label for="password"> Saisir un mot de passe :</label> <input type="password" id="password" name="password">
+    <label for="password"> Saisir un mot de passe :</label> <input type="password" id="password" name="password" required="required">
     <br>
     <input type="submit" value="valider">
 </form>
