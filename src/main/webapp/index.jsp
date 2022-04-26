@@ -1,14 +1,22 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>JSP - Hello World</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title> OnlyPets</title>
 </head>
 <body>
-<h1><%= "Bonjour monde!" %></h1>
-<h2>Ca va ma couille?</h2>
-<br/>
-<a href="hello-servlet">Yoo le Servlet</a>
-<a href="hello-servlet">Bonjour les gens</a>
+    <a href="hello-servlet">Yoo le Servlet</a>
+    <a href="hello-servlet">Bonjour les gens</a>
+    <h1><%= "Bonjour monde!" %></h1>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" ></script>
 </body>
 </html>
