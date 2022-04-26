@@ -18,4 +18,6 @@ public class Servlet_Submit_Account_Update extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
+
+    //Bonjour les amigos
 }
