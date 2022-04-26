@@ -2,6 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="icon" href="../images/logo.png" />
     <title>Créer un compte</title>
 </head>
 <body>

@@ -8,9 +8,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <link rel="icon" href="../images/logo.png" />
+    <title> Post </title>
 </head>
 <body>
+<h1> Création d'un Post </h1>
+
+<form action="../Servlet_New_Post" method="post">
+    <div><label for="title"> Titre du post</label> <input type="text" id="title" name="post" required="required">
+    </div>
+    <br>
+    <div><label for="petID"> Nom de l'animal</label> <input type="text" id="petID" name="post-animal" required="required">
+    </div>
+    <br>
+    <div><label for="photo"> URL de l'image </label> <input type="text" id="photo" name="post-image" required="required">
+    </div>
+    <div>
+        <label for="description"> Description du post </label>
+        <br>
+        <textarea id="description" name="description" rows="6" cols="30"></textarea>
+    </div>
+    <input type="submit" value="valider">
+</form>
 
 </body>
 </html>
