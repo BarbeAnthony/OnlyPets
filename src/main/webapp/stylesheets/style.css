@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    --orange: #f68741 ;
+    --yellow:#fcdf87;
+    --pink: #ef0195;
+    --blue:#1b96f3 ; 
+    --dark_blue: #10133a ;
+    --black : black;
+    --white : white;
+  }
+  
+  /*  Navbar */
+
+
+  /*  Container */
+
+  /* Filter */
+
+  /* Feed */
+  .post {
+      margin : 2% 5% 1% 0%;
+      padding: 2%;
+  }
+  .card-body{
+      text-align: center;
+  }
+  .unlike {
+    color:rgb(206, 202, 202);
+  }
+  .like {
+    color : var(--pink);
+   }
+  .fa-heart {
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
