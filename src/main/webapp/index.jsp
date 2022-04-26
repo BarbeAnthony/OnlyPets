@@ -53,7 +53,7 @@
                     </div>
                 </li>
             </c:if>
-            <c:if test="${empty sessionScope.username}">
+            <c:if test="${empty sessionScope.email}">
                 <li class="nav-item " >
                     <a  class="nav-link " href= "jsp_files/user_login.jsp"> User login </a>
                 </li>  
