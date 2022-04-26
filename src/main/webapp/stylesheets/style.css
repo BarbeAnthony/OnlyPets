@@ -20,16 +20,22 @@
   /* Filter */
 
   /* Feed */
-
+  .post {
+      margin : 2% 5% 1% 0%;
+      padding: 2%;
+  }
+  .card-body{
+      text-align: center;
+  }
+  .unlike {
+    color:rgb(206, 202, 202);
+  }
+  .like {
+    color : var(--pink);
+   }
   .fa-heart {
     font-size: 25px;
     cursor: pointer;
     user-select: none;
   }
   
-  .unliked {
-    color:rgb(206, 202, 202);
-  }
-.liked {
-    color : var(--pink);
-}

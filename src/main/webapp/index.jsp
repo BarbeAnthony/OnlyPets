@@ -8,14 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png" />
-    <!-- Icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Font library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <!-- Bootstrap library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title> OnlyPets</title>
 </head>
@@ -73,16 +74,82 @@
             <div class="col-3"> 
                 <h1> Filters </h1>
 
+                <form method="get" action="" id="filter">
+                    <label for="espece"> Espèce </label> <br>
+                    <select id="espece" class="form-select" multiple aria-label="multiple select example">
+                        <option selected>Selection</option>
+                        <option value="chats"> Chats</option>
+                        <option value="chiens"> Chiens</option>
+                        <option value="rongeurs">Rongeurs</option>
+                        <option value="oiseaux"> Oiseaux</option>
+                        <option value="poissons"> Poissons</option>
+                        <option value="reptiles">Reptiles</option>
+                        <option value="autres"> Autres </option>
+                      </select>
+                      
+                      <button > Joyeux Anniversaire </button>
+                      
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="recent" id="recent">
+                        <label class="form-check-label" for="recent">
+                         Les plus récents
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ancien" id="ancien">
+                        <label class="form-check-label" for="ancien">
+                         Les plus anciens
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="croissant" id="croissant">
+                        <label class="form-check-label" for="croissant">
+                         de A à Z
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="decroissant" id="decroissant">
+                        <label class="form-check-label" for="decroissant">
+                         de Z à A
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="aimer" id="aimer">
+                        <label class="form-check-label" for="aimer">
+                         Les plus likés
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="moin_aimer" id="moin_aimer">
+                        <label class="form-check-label" for="moin_aimer">
+                         Les moins likés
+                        </label>
+                      </div>
+                      
+                      <input type="submit" value="Filter" name="filtrer" id="filtrer">
+                </form>
+
             </div>
             <div class="col-9">
                 <h1> Feed </h1>
-                <div class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text" > Animal name </p>
+                <div class="post card">
+                    <h5 class="card-title">Ceci est un premier post</h5>
+                    <p class="card-text" > patrick</p>
                     <img src="..." class="card-img-top" alt="Photo animal introuvable">
                     <div class="card-body">
-                        <i onclick="like(this)" class=" unliked fa-solid fa-heart"></i>
+                        <i class="unlike fa-solid fa-heart"></i>
                         <p> 10k </p>
+                    </div>
+                </div>
+
+                <div class="post card">
+                    <h5 class="card-title">Ceci est un second post</h5>
+                    <p class="card-text" > gerard </p>
+                    <img src="..." class="card-img-top" alt="Photo animal introuvable">
+                    <div class="card-body">
+                        <i class="unlike fa-solid fa-heart"></i>
+                        <p> 2k </p>
                     </div>
                 </div>
 
@@ -103,14 +170,13 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 
     <script src="./javascripts/script.js"></script>
     <script src="https://kit.fontawesome.com/6e8aeeb9e3.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Boostrap js library -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" ></script>
 </body>
