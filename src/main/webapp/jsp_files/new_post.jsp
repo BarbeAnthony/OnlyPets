@@ -28,7 +28,7 @@
         <br>
         <textarea id="description" name="description" rows="6" cols="30"></textarea>
     </div>
-
+    <input type="submit" value="valider">
 </form>
 
 </body>
