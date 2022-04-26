@@ -63,8 +63,11 @@
          
         </div>
       </nav>
-      <a href= "jsp_files/user_login.jsp"> User login </a>
+      
       <a href="jsp_files/new_user.jsp">New User</a>
+      <a href="jsp_files/new_post.jsp">New Post</a>
+      <a href="jsp_files/new_pet.jsp">New Pets</a>
+
 
 
 
@@ -76,11 +79,11 @@
 
                 <form method="get" action="" id="filter">
                     <label for="espece"> Espèce </label> <br>
-                    <select id="espece" class="form-select" multiple aria-label="multiple select example">
-                        <option selected>Selection</option>
+                    <select id="espece" class="form-select" multiple aria-label="selector">
+                        <option value="" > --selection--</option>
                         <option value="chats"> Chats</option>
                         <option value="chiens"> Chiens</option>
-                        <option value="rongeurs">Rongeurs</option>
+                        <option value="NAC">NAC</option>
                         <option value="oiseaux"> Oiseaux</option>
                         <option value="poissons"> Poissons</option>
                         <option value="reptiles">Reptiles</option>
@@ -93,39 +96,28 @@
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="recent" id="recent">
                         <label class="form-check-label" for="recent">
-                         Les plus récents
+                        Les plus récents
                         </label>
-                      </div>
-                      <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="ancien" id="ancien">
                         <label class="form-check-label" for="ancien">
-                         Les plus anciens
-                        </label>
-                      </div>
-                      <div class="form-check">
+                         Les plus anc
                         <input class="form-check-input" type="checkbox" value="croissant" id="croissant">
                         <label class="form-check-label" for="croissant">
-                         de A à Z
+                        de A à Z
                         </label>
-                      </div>
-                      <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="decroissant" id="decroissant">
                         <label class="form-check-label" for="decroissant">
                          de Z à A
                         </label>
-                      </div>
-                      <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="aimer" id="aimer">
                         <label class="form-check-label" for="aimer">
                          Les plus likés
                         </label>
-                      </div>
-                      <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="moin_aimer" id="moin_aimer">
                         <label class="form-check-label" for="moin_aimer">
                          Les moins likés
                         </label>
-                      </div>
+                        </div>
                       
                       <input type="submit" value="Filter" name="filtrer" id="filtrer">
                 </form>
