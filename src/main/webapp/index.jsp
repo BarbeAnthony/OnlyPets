@@ -89,7 +89,7 @@
                         <option value="reptiles">Reptiles</option>
                         <option value="autres"> Autres </option>
                       </select>
-                      
+                      <br>
                       <button > Joyeux Anniversaire </button>
                       
 
@@ -98,21 +98,27 @@
                         <label class="form-check-label" for="recent">
                         Les plus récents
                         </label>
+                          <br>
                         <input class="form-check-input" type="checkbox" value="ancien" id="ancien">
                         <label class="form-check-label" for="ancien">
-                         Les plus anc
+                         Les plus anciens
+                        </label>
+                          <br>
                         <input class="form-check-input" type="checkbox" value="croissant" id="croissant">
                         <label class="form-check-label" for="croissant">
                         de A à Z
                         </label>
+                          <br>
                         <input class="form-check-input" type="checkbox" value="decroissant" id="decroissant">
                         <label class="form-check-label" for="decroissant">
                          de Z à A
                         </label>
+                          <br>
                         <input class="form-check-input" type="checkbox" value="aimer" id="aimer">
                         <label class="form-check-label" for="aimer">
                          Les plus likés
                         </label>
+                          <br>
                         <input class="form-check-input" type="checkbox" value="moin_aimer" id="moin_aimer">
                         <label class="form-check-label" for="moin_aimer">
                          Les moins likés

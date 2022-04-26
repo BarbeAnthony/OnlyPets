@@ -21,7 +21,7 @@
     </div>
     <div>
 
-        <label for="especeChoice"> Espèce </label> <br>
+        <label for="especeChoice"> Espèce </label>
         <select id="especeChoice" onchange="displayInfo();">
             <option value="chat">Chat</option>
             <option value="chien">Chien</option>
@@ -33,7 +33,9 @@
         </select>
     </div>
     <div>
-        <textarea name="description" rows="6" cols="30"></textarea>
+        <label for="description"> Description de l'animal </label>
+        <br>
+        <textarea id="description" name="description" rows="6" cols="30"></textarea>
     </div>
     <div>
         <label for="birthbay"> Date d'anniversaire
