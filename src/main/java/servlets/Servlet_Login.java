@@ -28,6 +28,8 @@ public class Servlet_Login extends HttpServlet {
         String email = (String)request.getParameter("email");
         HttpSession session = request.getSession();
 
+
+
         session.setAttribute("email", email);
         setCookie(response,"email",email,COOKIE_MAX_AGE);
 

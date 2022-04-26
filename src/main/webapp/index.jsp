@@ -39,10 +39,10 @@
                     <button class="btn " type="submit">Rechercher</button>
                 </form>
             </li>
-            <c:if test="${not empty sessionScope.username}">
+            <c:if test="${not empty sessionScope.email}">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Bonjour, <c:out  value="${username}"/>
+                       Bonjour, <c:out  value="${email}"/>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Mon Compte</a>
