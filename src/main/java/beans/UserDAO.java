@@ -45,7 +45,45 @@ public class UserDAO {
         }
     }
 
-    public String getUsername(String password, String email) {
+    public boolean isUsernameAvailable(String username) {
+        try {
+            Statement statement = connexion.createStatement();
+
+            //TODO nettoyer username pour protection sql injection
+
+            String requete = "SELECT username FROM users WHERE username= '" + username + "';";
+            ResultSet rs = statement.executeQuery(requete);
+            if (rs.next() != false) {
+                return false;
+            } else {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public boolean isEmailAvailable(String email) {
+        try {
+            Statement statement = connexion.createStatement();
+
+            //TODO nettoyer username pour protection sql injection
+
+            String requete = "SELECT email FROM users WHERE email= '" + email + "';";
+            ResultSet rs = statement.executeQuery(requete);
+            if (rs.next() != false) {
+                return false;
+            } else {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public String getUsernameAtConnection(String password, String email) {
         String username = "";
         try {
             Statement statement = connexion.createStatement();

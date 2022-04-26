@@ -23,6 +23,7 @@ public class Servlet_Create_Account extends HttpServlet {
         si ok : enregistrement dans bdd
          */
         session.setAttribute("username", username);
+        //TODO création de cookies
 
         this.getServletContext().getRequestDispatcher("/jsp_files/my_account.jsp").forward(request, response);
     }

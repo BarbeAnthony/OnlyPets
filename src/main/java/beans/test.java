@@ -5,7 +5,8 @@ public class test {
         UserDAO userDAO = new UserDAO();
 
         userDAO.initialisation();
-        System.out.println(userDAO.getUsername("xxxxxxxxxxxxx", "test@gmail.com"));
+        System.out.println(userDAO.isUsernameAvailable("boby"));
+        System.out.println(userDAO.isEmailAvailable("hgfd@gmail.com"));
         userDAO.cloture();
     }
 }
