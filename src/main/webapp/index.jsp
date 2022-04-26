@@ -11,8 +11,8 @@
     <title> OnlyPets</title>
 </head>
 <body>
-    <a href="hello-servlet">Yoo le Servlet</a>
-    <a href="hello-servlet">Bonjour les gens</a>
+    <a href= "jsp_files/user_login.jsp"> User login </a>
+    <a href="jsp_files/new_user.jsp">New User</a>
     <h1><%= "Bonjour monde!" %></h1>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
