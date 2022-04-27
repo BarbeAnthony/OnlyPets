@@ -8,7 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/logo.png" />
+    <link rel="icon" href="images/logo.png" />
+
 
     <!-- Font library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +21,8 @@
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <link rel="stylesheet" href="../stylesheets/login.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
     <title id="mainTitle"> Login</title>
 </head>
 
@@ -33,17 +34,17 @@
   <div class="card mb-3">
     <div class="row g-0 d-flex align-items-center">
       <div class="col-lg-4 d-none d-lg-flex">
-        <img src="../images/login-cat.jpg" alt="Login cat pictures"
+        <img src="images/login-cat.jpg" alt="Login cat pictures"
           class="w-100 h-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
       </div>
       <div class="col-lg-8">
         <div class="card-body py-5 px-md-5">
           <div class="px-5 ms-xl-4">
             <i class="fa-solid fa-paw fa-2x me-3 pt-5 mt-xl-4"></i>
-            <a href="../index.jsp" class="h1 fw-bold mb-0">OnlyPets</a>
+            <a href="index.jsp" class="h1 fw-bold mb-0">OnlyPets</a>
           </div>
 
-          <form  action="../Servlet_Login" method="post" id="loginform">
+          <form  action="Servlet_Login" method="post" id="loginform">
             <!-- Email input -->
             <div class="form-outline mb-4">
               <label for="email"> Email :</label> <br>
@@ -63,7 +64,8 @@
             <div class="row mb-4">
               <div class="col">
                 <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Mot de passe oublié ?</a></p>
-                <p>Vous n'avez pas de compte ? <a href="../jsp_files/new_user.jsp" class="link-info">Créer un compte</a></p>
+                <p>Vous n'avez pas de compte ? <a href="Servlet_Create_Account" class="link-info">Créer un compte</a></p>
+
               </div>
             </div>
 
@@ -81,7 +83,7 @@
 
 
 
-<script src="../javascripts/script.js"></script>
+<script src="javascripts/script.js"></script>
 <script src="https://kit.fontawesome.com/6e8aeeb9e3.js" crossorigin="anonymous"></script>
 <!-- Boostrap js library -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>

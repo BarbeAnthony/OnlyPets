@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/logo.png" />
+    <link rel="icon" href="images/logo.png" />
 
     <!-- Font library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +19,8 @@
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <link rel="stylesheet" href="../stylesheets/newUser.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/newUser.css">
     <title id="mainTitle"> Créer votre compte</title>
 </head>
 
@@ -35,10 +35,10 @@
         <div class="card-body py-5 px-md-5">
           <div class="px-5 ms-xl-4">
             <i class="fa-solid fa-paw fa-2x me-3 pt-5 mt-xl-4"></i>
-            <a href="../index.jsp" class="h1 fw-bold mb-0">oNLYpETS</a>
+            <a href="index.jsp" class="h1 fw-bold mb-0">oNLYpETS</a>
           </div>
 
-          <form action="../Servlet_Create_Account" method="post">
+          <form action="Servlet_Create_Account" method="post">
             <h2> Mes identifiants </h2>
             <div  class="form-outline mb-4" >
                 <label for="username"> Pseudo </label>
@@ -63,7 +63,7 @@
 
             <div class="row mb-4">
               <div class="col">
-                <p>Déjà membre ? <a href="../jsp_files/user_login.jsp" class="link-info">Connectez-vous</a></p>
+                <p>Déjà membre ? <a href="Servlet_Login" class="link-info">Connectez-vous</a></p>
               </div>
             </div>
 
@@ -74,7 +74,7 @@
       </div>
 
       <div class="col-lg-4 d-none d-lg-flex">
-        <img src="../images/newuserDog.jpg" alt="new user dog pictures"
+        <img src="images/newuserDog.jpg" alt="new user dog pictures"
           class="w-100 h-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
       </div>
     </div>
@@ -91,7 +91,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="../javascripts/new_user.js"></script>
+<script src="javascripts/new_user.js"></script>
 
 
 </body>

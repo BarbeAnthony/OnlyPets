@@ -60,7 +60,7 @@
             <!-- TODO : CHECK IF COOKIE EXIST-->
             <c:if test="${empty sessionScope.username}">
                 <li class="nav-item ">
-                    <a  class="nav-link"  href= "jsp_files/user_login.jsp"> User login </a>
+                    <a  class="nav-link"  href= "Servlet_Login"> User login </a>
                 </li>  
             </c:if>
             
@@ -203,7 +203,7 @@
               <a href="index.jsp" class="text-reset">Home</a>
             </p>
             <p>
-              <a href="./jsp_files/new_user.jsp" class="text-reset"> New User</a>
+              <a href="Servlet_Create_Account" class="text-reset"> New User</a>
             </p>
             <p>
               <a href="./jsp_files/new_post.jsp" class="text-reset">New Post </a>

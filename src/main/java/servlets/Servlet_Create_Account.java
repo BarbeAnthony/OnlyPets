@@ -22,6 +22,11 @@ public class Servlet_Create_Account extends HttpServlet {
         boolean emailAlreadyTakken = false;
         User newUser = new User();
 
+        if(username == null && password == null && email == null ){
+            this.getServletContext().getRequestDispatcher("/jsp_files/new_user.jsp").forward(request, response);
+            return;
+        }
+
         //vérification des disponibilités dans la BDD
         userDAO.initialisation();
         usernameAlareadyTakken = userDAO.usernameExists(username);
