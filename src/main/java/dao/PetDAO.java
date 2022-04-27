@@ -37,16 +37,30 @@ public class PetDAO {
         try {
             Statement statement = connexion.createStatement();
             String requete = "INSERT INTO pets VALUES(default, " + pet.getUserID() + ",'" +
-                    pet.getName()  + "','" +
-                    pet.getSpecies() + "','" +
-                    pet.getPresentation() + "','" +
-                    pet.getBirthday() + "');";
+                    pet.getName().replace("'", "''") + "','" +
+                    pet.getSpecies().replace("'", "''") + "','" +
+                    pet.getPresentation().replace("'", "''") + "','" +
+                    pet.getBirthday().replace("'", "''") + "');";
             statement.executeUpdate(requete);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }
 
+    public int getLastInsertId(){
+        int lastInsertId = -1;
+        try {
+            Statement statement = connexion.createStatement();
+            String requete = "SELECT LAST_INSERT_ID();";
+            ResultSet rs = statement.executeQuery(requete);
+            if (rs.next() != false) {
+                lastInsertId = rs.getInt("LAST_INSERT_ID()");
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return lastInsertId;
+    }
 
     /* TODO A supprimer si pas besoin d'adapter pour users
     public List<Appartement> retournerTousLesAppartements() {

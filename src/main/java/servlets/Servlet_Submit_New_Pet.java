@@ -14,15 +14,16 @@ import java.io.IOException;
 public class Servlet_Submit_New_Pet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int userID;
         String name = request.getParameter("name");
         String species = request.getParameter("species");
         String presentation = request.getParameter("presentation");
         String birthday = request.getParameter("birthday");
         HttpSession session = request.getSession();
         UserDAO userDAO = new UserDAO();
+        int userID;
         PetDAO petDAO = new PetDAO();
         Pet newPet = new Pet();
+        int newPetID;
 
         //TODO à supprimer si pas besoin au final
         /*if(username == null && password == null && email == null ){
@@ -34,6 +35,11 @@ public class Servlet_Submit_New_Pet extends HttpServlet {
         userID = userDAO.getUserIdByUsername((String) session.getAttribute("username"));
         userDAO.cloture();
 
+        if (userID ==-1) {
+            System.out.println("Erreur, impossible de récupérer l'ID de l'utilisateur connecté.");
+            return;
+        }
+
         // ajout de l'animal à la BDD
         newPet.setUserID(userID);
         newPet.setName(name);
@@ -43,9 +49,16 @@ public class Servlet_Submit_New_Pet extends HttpServlet {
 
         petDAO.initialisation();
         petDAO.addPet(newPet);
+        newPetID = petDAO.getLastInsertId();
         petDAO.cloture();
 
-        //TODO récupérer ID du pet et créer lien user-pet
+
+        if (newPetID ==-1) {
+            System.out.println("Erreur, impossible de récupérer l'ID de l'animal créé, impossible de créer un lien utilisateur-animal dans la BDD.");
+            return;
+        }
+        //TODO  créer lien user-pet
+
 
         this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
