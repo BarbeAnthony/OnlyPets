@@ -14,7 +14,7 @@ public class Servlet_Create_Account extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         final int COOKIE_MAX_AGE = 60 *60 *24 *365;
         String username = request.getParameter("username");
-        String password = request.getParameter("password1"); //TODO à corriger avec Elodie dans new_user.jsp
+        String password = request.getParameter("password"); //TODO à corriger avec Elodie dans new_user.jsp
         String email = request.getParameter("email");
         HttpSession session = request.getSession();
         UserDAO userDAO = new UserDAO();
