@@ -101,6 +101,23 @@ public class UserDAO {
         return username;
     }
 
+    public int getUserIdByUsername(String username) {
+        int userID = -1;
+
+        try {
+            Statement statement = connexion.createStatement();
+            //TODO nettoyer username pour protection sql injection
+            String requete = "SELECT ID FROM users WHERE username= '" + username + "';";
+            ResultSet rs = statement.executeQuery(requete);
+            if (rs.next() != false) {
+                userID = rs.getInt("ID");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userID;
+    }
+
     /* TODO A supprimer si pas besoin d'adapter pour users
     public List<Appartement> retournerTousLesAppartements() {
         List<Appartement> appartList = new ArrayList<>();

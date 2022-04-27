@@ -52,8 +52,8 @@
                         </div>
                         <div>
 
-                            <label for="especeChoice"> Espèce </label>
-                            <select id="especeChoice">
+                            <label for="especeChoice"> Catégorie </label>
+                            <select id="especeChoice" name="species">
                                 <option value="chat">Chat</option>
                                 <option value="chien">Chien</option>
                                 <option value="NAC">NAC</option>
@@ -64,13 +64,13 @@
                             </select>
                         </div>
                         <div>
-                            <label for="description"> Description de l'animal </label>
+                            <label for="presentation"> Présentation de l'animal </label>
                             <br>
-                            <textarea id="description" name="description" rows="6" cols="30"></textarea>
+                            <textarea id="presentation" name="presentation" rows="6" cols="30"></textarea>
                         </div>
                         <div>
-                            <label for="birthbay"> Date d'anniversaire
-                                <input type="date" name="birthbay" id="birthbay" required="required"></label>
+                            <label for="birthday"> Date d'anniversaire
+                                <input type="date" name="birthday" id="birthday" required="required"></label>
                         </div>
 
                         <div class="pt-1 mb-4">
