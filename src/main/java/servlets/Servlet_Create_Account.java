@@ -44,7 +44,7 @@ public class Servlet_Create_Account extends HttpServlet {
         //Si identifiants disponibles:
         // ajout de l'utilisateur à la BDD
         newUser.setUsername(username);
-        newUser.setPassword(password);  //TODO criptage du mdp (chercher une bibliothèque Java qui le fait)
+        newUser.setPassword(password);  //TODO criptage du mdp (chercher bibliothèque JBCrypt qui le fait)
         newUser.setEmail(email);
         userDAO.addUser(newUser);
         userDAO.cloture();
