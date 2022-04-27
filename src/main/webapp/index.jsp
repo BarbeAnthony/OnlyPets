@@ -204,13 +204,13 @@
               <a href="index.jsp" class="text-reset">Home</a>
             </p>
             <p>
-              <a href="jsp_files/new_user.jsp" class="text-reset"> New User</a>
+              <a href="./jsp_files/new_user.jsp" class="text-reset"> New User</a>
             </p>
             <p>
-              <a href="jsp_files/new_post.jsp" class="text-reset">New Post </a>
+              <a href="./jsp_files/new_post.jsp" class="text-reset">New Post </a>
             </p>
             <p>
-              <a href="jsp_files/new_pet.jsp" class="text-reset">New Pet</a>
+              <a href="./jsp_files/new_pet.jsp" class="text-reset">New Pet</a>
             </p>
           </div>
         

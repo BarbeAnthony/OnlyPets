@@ -63,7 +63,7 @@
             <div class="row mb-4">
               <div class="col">
                 <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Mot de passe oublié ?</a></p>
-                <p>Vous n'avez pas de compte ? <a href="#!" class="link-info">Créer un compte</a></p>
+                <p>Vous n'avez pas de compte ? <a href="../jsp_files/new_user.jsp" class="link-info">Créer un compte</a></p>
               </div>
             </div>
 
