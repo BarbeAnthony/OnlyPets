@@ -57,7 +57,7 @@
             </div>
 
             <div class="pt-1 mb-4">
-              <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
+              <input class="btn btn-info btn-lg btn-block" type="submit" value="Login"></input>
             </div>
 
             <div class="row mb-4">

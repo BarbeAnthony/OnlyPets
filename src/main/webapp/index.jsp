@@ -51,7 +51,6 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Mon Compte</a>
-                      <a class="dropdown-item" href="#">Se déconnecter</a>
                       <form class="dropdown-item" method="POST" action="Servlet_Logout">
                         <input type="submit" value="Logout"/>
                     </form>
