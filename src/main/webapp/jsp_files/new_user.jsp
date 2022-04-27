@@ -35,7 +35,7 @@
         <div class="card-body py-5 px-md-5">
           <div class="px-5 ms-xl-4">
             <i class="fa-solid fa-paw fa-2x me-3 pt-5 mt-xl-4"></i>
-            <a href="../index.jsp" class="h1 fw-bold mb-0">OnlyPets</a>
+            <a href="../index.jsp" class="h1 fw-bold mb-0">oNLYpETS</a>
           </div>
 
           <form action="../Servlet_Create_Account" method="post">

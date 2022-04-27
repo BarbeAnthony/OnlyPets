@@ -74,7 +74,7 @@
         <!-- Content here -->
         <div class="row">
             <div id="filtercol" class="col-3"> 
-                <h1> Filters </h1>
+                <h1> Filtres </h1>
 
                 <form method="get" action="" id="filter">
                     <label for="espece"> Espèce </label> <br>
@@ -124,7 +124,7 @@
                         </label>
                         </div>
                       
-                      <input type="submit" value="Filter" name="filtrer" id="filtrer">
+                      <input type="submit" value="Filtrer" name="filtrer" id="filtrer">
                 </form>
 
             </div>
@@ -185,7 +185,7 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fa-solid fa-paw"></i> OnlyPets
+                <i class="fa-solid fa-paw"></i> oNLYpETS
             </h6>
             <p>
               Welcome to the best website of the internet ! Login and start sharing
