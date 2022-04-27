@@ -2,8 +2,10 @@ package servlets;
 
 import beans.Pet;
 import beans.User;
+import beans.UserPet;
 import dao.PetDAO;
 import dao.UserDAO;
+import dao.UserPetDAO;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -24,13 +26,15 @@ public class Servlet_Submit_New_Pet extends HttpServlet {
         PetDAO petDAO = new PetDAO();
         Pet newPet = new Pet();
         int newPetID;
+        UserPetDAO userPetDAO = new UserPetDAO();
 
-        //TODO à supprimer si pas besoin au final
+        //TODO à supprimer si pas besoin au final, pour premier appel de la page sans parametres à récupérer
         /*if(username == null && password == null && email == null ){
             this.getServletContext().getRequestDispatcher("/jsp_files/new_user.jsp").forward(request, response);
             return;
         }*/
 
+        //Récupération de l'ID de l'utilisateur, erreur si échec
         userDAO.initialisation();
         userID = userDAO.getUserIdByUsername((String) session.getAttribute("username"));
         userDAO.cloture();
@@ -40,26 +44,31 @@ public class Servlet_Submit_New_Pet extends HttpServlet {
             return;
         }
 
-        // ajout de l'animal à la BDD
+        // Configuration du nouvel animal
         newPet.setUserID(userID);
         newPet.setName(name);
         newPet.setSpecies(species);
         newPet.setPresentation(presentation);
         newPet.setBirthday(birthday);
 
+        //Injection dans la BDD
         petDAO.initialisation();
         petDAO.addPet(newPet);
         newPetID = petDAO.getLastInsertId();
         petDAO.cloture();
 
-
+        //Erreur si problème d'injection
         if (newPetID ==-1) {
             System.out.println("Erreur, impossible de récupérer l'ID de l'animal créé, impossible de créer un lien utilisateur-animal dans la BDD.");
             return;
         }
-        //TODO  créer lien user-pet
 
+        //Création du lien User-Pet dans la BDD
+        userPetDAO.initialisation();
+        userPetDAO.addUserPet(new UserPet(userID, newPetID));
+        userPetDAO.cloture();
 
+        //Appel du jsp suivant
         this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
 

@@ -1,9 +1,5 @@
 package beans;
 
-import java.util.Date;
-
-import static java.lang.Integer.parseInt;
-
 public class Pet {
 
     private int userID;
