@@ -60,4 +60,12 @@ function check_email_valid(){
             $("#email").css("border", "2px solid red");
         }
     });
+
+
+
+
+    function email_unique() {
+
+    }
+
 }
