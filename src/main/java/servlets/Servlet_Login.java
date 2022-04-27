@@ -30,10 +30,6 @@ public class Servlet_Login extends HttpServlet {
         String email = (String)request.getParameter("email");
         String password = request.getParameter("password");
         HttpSession session = request.getSession();
-
-        session.setAttribute("email", email);
-        setCookie(response,"email",email,COOKIE_MAX_AGE);
-
         String username = "";
 
         UserDAO userDAO = new UserDAO();
@@ -47,7 +43,8 @@ public class Servlet_Login extends HttpServlet {
 
             this.getServletContext().getRequestDispatcher("/jsp_files/user_login.jsp").forward(request, response);
         }else{
-
+            session.setAttribute("username", username);
+            setCookie(response,"username",username,COOKIE_MAX_AGE);
             this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
         }
 

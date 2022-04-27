@@ -44,10 +44,10 @@
                     <button class="btn " id="researchbtn" type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </li>
-            <c:if test="${not empty sessionScope.email}">
+            <c:if test="${not empty sessionScope.username}">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Bonjour, <c:out  value="${email}"/>
+                       Bonjour, <c:out  value="${username}"/>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Mon Compte</a>
@@ -58,7 +58,7 @@
                 </li>
             </c:if>
             <!-- TODO : CHECK IF COOKIE EXIST-->
-            <c:if test="${empty sessionScope.email}">
+            <c:if test="${empty sessionScope.username}">
                 <li class="nav-item ">
                     <a  class="nav-link"  href= "jsp_files/user_login.jsp"> User login </a>
                 </li>  
