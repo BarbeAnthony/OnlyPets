@@ -58,7 +58,7 @@
             </div>
 
             <div class="pt-1 mb-4">
-              <button class="btn btn-info btn-lg btn-block" type="button">Valider</button>
+              <input class="btn btn-info btn-lg btn-block" type="submit" value="Valider"></input>
             </div>
 
             <div class="row mb-4">
