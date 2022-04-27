@@ -57,7 +57,9 @@
   /* Filter */
   #filtercol{
     padding: 2%;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(252, 223, 135);
+      border-top: rgba(218, 189, 102, 0.5) 3px dotted;
+      border-bottom: rgba(218, 189, 102, 0.5) 3px dotted;
 
 }
 
@@ -86,7 +88,7 @@
     padding: 16px 14px 18px;
     color: #616467;
     box-shadow: inset 0 0 0 2px #616467;
-    background-color: transparent;
+    background-color: #ffffff;
     height: 48px;
 }
 
