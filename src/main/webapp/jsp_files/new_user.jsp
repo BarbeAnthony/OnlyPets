@@ -43,10 +43,25 @@
             <div  class="form-outline mb-4" >
                 <label for="username"> Pseudo </label>
                 <input type="text" name="username" id="username" required="required">
+
+                <c:if test="${userNameAlreadyTakken == true}">
+                    <div class="alert alert-danger" role="alert">
+                        Le pseudo est déjà utlisé. Veuillez en choisir un autre.
+                    </div>
+
+                </c:if>
+
             </div>
             <div  class="form-outline mb-4">
                 <label for="email"> Email </label>
                 <input type="email" name="email" id="email" required="required">
+
+                <c:if test="${emailAlreadyTakken == true}">
+                    <div class="alert alert-danger" role="alert">
+                        L'email est déjà utlisé. Veuillez en choisir un autre.
+                    </div>
+
+                </c:if>
             </div>
             <div  class="form-outline mb-4" >
                 <label for="password1"> Mot de passe (8 characters minimum)
