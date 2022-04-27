@@ -50,7 +50,7 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Mon Compte</a>
+                        <a class="dropdown-item" href="./jsp_files/my_account.jsp">Mon Compte</a>
                         <a class="dropdown-item" href="Servlet_Logout">Logout</a>
                     </div>
                 </li>
@@ -135,6 +135,9 @@
             </div>
             <div class="col-9" id="feed">
                 <h1> Feed </h1>
+                <c:if test="${not empty sessionScope.username}">
+                    <a class="btn btn-primary" href="jsp_files/new_post.jsp" role="button">Ajouter un post</a>
+                </c:if>
                 <div class=" card">
                     <h5 class="card-title">Ceci est un premier post</h5>
                     <p class="card-text" > patrick - maitre gustave</p>

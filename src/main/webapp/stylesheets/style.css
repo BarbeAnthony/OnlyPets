@@ -55,10 +55,26 @@
 
 
   /*  Container */
+.btn-primary{
+    color: var(--white);
+    font-weight: bolder;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin : 2% 5%;
 
+}
+.btn-primary:hover {
+    border: 1px var(--blue) solid;
+}
 
   /* Filter */
-  #filtercol{
+  #filtercol, #userInfoUpdate{
     padding: 2%;
     background-color: var(--hover_yellow);
       border-top: var(--orange) 3px dotted;
@@ -130,7 +146,7 @@
 }
   /* Feed */
 
-#feed{
+#feed, #userAnimalFeed{
     padding: 2%;
 }
   /* Feed */
@@ -191,7 +207,7 @@
     }
     
   /*700px and less */
-   @media screen and (max-width: 700px) {
+   @media screen and (max-width: 900px) {
       h1 {
         font-size: 22px;
       }
