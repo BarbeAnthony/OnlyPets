@@ -45,8 +45,10 @@
                 <input type="text" name="username" id="username" required="required">
 
                 <c:if test="${userNameAlreadyTakken == true}">
-                    <br>
-               Le pseudo est déjà utlisé. Veuillez en choisir un autre.
+                    <div class="alert alert-danger" role="alert">
+                        Le pseudo est déjà utlisé. Veuillez en choisir un autre.
+                    </div>
+
                 </c:if>
 
             </div>
@@ -55,8 +57,10 @@
                 <input type="email" name="email" id="email" required="required">
 
                 <c:if test="${emailAlreadyTakken == true}">
-                    <br>
-                    L'email est déjà utlisé. Veuillez en choisir un autre.
+                    <div class="alert alert-danger" role="alert">
+                        L'email est déjà utlisé. Veuillez en choisir un autre.
+                    </div>
+
                 </c:if>
             </div>
             <div  class="form-outline mb-4" >
