@@ -51,15 +51,18 @@
     border-radius: 15px;
 
 }
+
+
+
   /*  Container */
 
 
   /* Filter */
   #filtercol{
     padding: 2%;
-    background-color: rgb(252, 223, 135);
-      border-top: rgba(218, 189, 102, 0.5) 3px dotted;
-      border-bottom: rgba(218, 189, 102, 0.5) 3px dotted;
+    background-color: var(--hover_yellow);
+      border-top: var(--orange) 3px dotted;
+      border-bottom:  var(--orange) 3px dotted;
 
 }
 
@@ -169,7 +172,7 @@
     background-color: rgb(241, 241, 241) ;
 }
 .cpr{
-    background-color: var(--yellow);
+    background-color: rgb(241, 241, 241) ;
 }
 
 .lk{

@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <!-- Bootstrap library -->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
@@ -49,24 +48,30 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Bonjour, <c:out  value="${username}"/>
                     </a>
+
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Mon Compte</a>
-                      <form class="dropdown-item" method="POST" action="Servlet_Logout">
-                        <input type="submit" value="Logout"/>
-                    </form>
+                        <a class="dropdown-item" href="#">Mon Compte</a>
+                        <a class="dropdown-item" href="Servlet_Logout">Logout</a>
                     </div>
                 </li>
             </c:if>
             <!-- TODO : CHECK IF COOKIE EXIST-->
             <c:if test="${empty sessionScope.username}">
+
                 <li class="nav-item ">
                     <a  class="nav-link"  href= "Servlet_Login"> User login </a>
-                </li>  
+                </li>
+
             </c:if>
             
           </ul>
          
         </div>
+<!--
+        <form  method="POST" action="Servlet_Logout">
+            <input type="submit" value="Logout"/>
+        </form>
+        <c:out value="${cookie.username.value}"></c:out> -->
       </nav>
       
 
@@ -256,8 +261,7 @@
   <!-- Boostrap js library -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 </body>
