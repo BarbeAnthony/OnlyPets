@@ -83,7 +83,7 @@
 
                 <form method="get" action="" id="filter">
                     <label for="espece"> Espèce </label> <br>
-                    <select id="espece" class="form-select form-select-sm" multiple aria-label=".form-select-sm example">
+                    <select id="espece" class="form-select " multiple aria-label=".form-select-sm example">
                         <option disabled> -- Selection --</option>
                         <option value="chats"> Chats</option>
                         <option value="chiens"> Chiens</option>
@@ -94,8 +94,8 @@
                         <option value="autres"> Autres </option>
                       </select>
                       <br>
-                      <button id="birthday"> Joyeux Anniversaire </button>
-                      
+                    <a id="birthday" class="btn btn-primary" href="" role="button">Joyeux Anniversaire</a>
+
 
                       <div id="filter_specifique" class="form-check">
                         <input class="form-check-input" class="radio" type="checkbox" value="recent" id="recent">
@@ -128,7 +128,7 @@
                          Les moins likés
                         </label>
                         </div>
-                      
+
                       <input type="submit" value="Filtrer" name="filtrer" id="filtrer">
                 </form>
 

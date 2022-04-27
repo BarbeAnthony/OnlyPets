@@ -7,65 +7,66 @@
     --yellow:#fcdf87;
     --hover_yellow :#dabd66e5;
     --pink: #ef0195;
-    --blue:#1b96f3 ; 
+    --blue:#1b96f3 ;
     --dark_blue: #10133a ;
     --black : black;
     --white : white;
 
-    
-  }
+
+}
 body{
-    background-color: var(--blue);
+    background-color: var(--pink);
 }
 
 section{
     margin-bottom: 20%;
 }
-  .rounded-t-5 {
+.rounded-t-5 {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-  }
+}
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .rounded-tr-lg-0 {
-      border-top-right-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .rounded-bl-lg-5 {
-      border-bottom-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
     }
-  }
+}
 
-  .card {
-        margin: 10% 5%;
-        margin-bottom: 20%;
-  }
+.card {
+    margin: 10% 5%;
+    margin-bottom: 20%;
+}
 
-  .pr-5, .px-5 {
+.pr-5, .px-5 {
     padding-right: 3rem !important;
     margin-bottom: 5%;
-  }
+}
 
-  a {
-    color: var(--orange);
+a {
+    color: var(--hover_yellow);
     text-decoration: none;
-  }
-  a:hover {
+}
+a:hover {
     color: var(--orange);
     text-decoration: underline;
-  }
+}
 
-  .btn-info {
-    color: var(--orange);
-      font-weight: bolder;
-    background-color: var(--blue);
-  }
-  .btn-info:hover {
-    color: var(--orange);
-      font-weight: bolder;
-    background-color: var(--blue);
+.btn-info {
+    color: var(--white);
+    font-size: large;
+    font-weight: bolder;
+    background-color: var(--pink);
+}
+.btn-info:hover {
+    color: var(--white);
+    font-weight: bolder;
+    background-color: var(--pink);
     border: 1px solid var(--orange);
-  }
-  .link-info:focus, .link-info:hover {
+}
+.link-info:focus, .link-info:hover {
     color: var(--orange);
-  }
+}

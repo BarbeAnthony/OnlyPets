@@ -45,13 +45,11 @@
 
                     <form  action="../Servlet_Submit_New_Pet" method="post">
                         <h1>Ajouter un animal</h1>
-
-                        <div>
+                        <div class=" row form-outline mb-4" >
                             <label for="name"> Nom de l'animal </label>
                             <input type="text" name="name" id="name" required="required">
                         </div>
-                        <div>
-
+                        <div class="row form-outline mb-4">
                             <label for="especeChoice"> Catégorie </label>
                             <select id="especeChoice" name="species">
                                 <option value="chat">Chat</option>
@@ -63,12 +61,12 @@
                                 <option value="autres">Autres</option>
                             </select>
                         </div>
-                        <div>
+                        <div class=" row form-outline mb-4" >
                             <label for="presentation"> Présentation de l'animal </label>
                             <br>
                             <textarea id="presentation" name="presentation" rows="6" cols="30"></textarea>
                         </div>
-                        <div>
+                        <div class=" row form-outline mb-4">
                             <label for="birthday"> Date d'anniversaire
                                 <input type="date" name="birthday" id="birthday" required="required"></label>
                         </div>
