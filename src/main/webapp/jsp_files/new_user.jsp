@@ -49,8 +49,8 @@
                 <input type="email" name="email" id="email" required="required">
             </div>
             <div  class="form-outline mb-4" >
-                <label for="password"> Mot de passe (8 characters minimum)
-                    <input type="password" name="password" id="password" minlength="8" value="" class="form-control" required="required" ></label>
+                <label for="password1"> Mot de passe (8 characters minimum)
+                    <input type="password" name="password1" id="password1" minlength="8" value="" class="form-control" required="required" ></label>
                 <br>
                 <label for="password2"> Confirmation du mot de passe
                     <input type="password" name="password2" id="password2" minlength="8" value="" class="form-control" required="required" disabled="true"></label>
@@ -85,14 +85,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
-<script src="../javascripts/new_user.js"></script>
-<script src="../javascripts/script.js"></script>
+
 <script src="https://kit.fontawesome.com/6e8aeeb9e3.js" crossorigin="anonymous"></script>
 <!-- Boostrap js library -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+<script src="../javascripts/new_user.js"></script>
 
 
 </body>
