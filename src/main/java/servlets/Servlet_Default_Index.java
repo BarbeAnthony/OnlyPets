@@ -12,6 +12,7 @@ public class Servlet_Default_Index extends HttpServlet {
         //TODO Vérifie les cookies pour afficher l'index en étant connecté ou non
         //TODO Par défaut, afficher les derniers posts du plus récent au plus ancien
 
+        this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
 
     @Override
