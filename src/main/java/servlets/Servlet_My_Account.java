@@ -13,7 +13,6 @@ import java.util.List;
 public class Servlet_My_Account extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //TODO Depuis index, accède à la page de gestion du compte de l'utilisateur my_account.jsp
         //TODO my_account.jsp doit afficher son nom et la liste de ses animaux. Nombre de posts par animal? lien vers leurs pages?
         HttpSession session = request.getSession();
         String username = (String) session.getAttribute("username");

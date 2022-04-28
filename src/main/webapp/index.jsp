@@ -142,38 +142,22 @@
                 <c:if test="${not empty sessionScope.username}">
                     <a class="btn btn-primary" href="Servlet_New_Post" role="button">Ajouter un post</a>
                 </c:if>
-                <div class=" card">
-                    <h5 class="card-title">Ceci est un premier post</h5>
-                    <p class="card-text" > patrick - maitre gustave</p>
-                    <img src="..." class="card-img-top" alt="Photo animal introuvable">
-                    <div class="card-body">
-                        <span id="heart"><i class="fa fa-heart-o fa-2xl" aria-hidden="true" ></i> </span>
-                        <p id="counter"> 10k </p>
+
+                <% System.out.print(request.getAttribute("postList"));%>
+                <c:forEach items="${postList}" var="post">
+                    <div class=" card">
+                        <h5 class="card-title"> <c:out value="${post.title}"/></h5>
+                        <p class="card-text" >  <c:out value="${post.petname}"/> - <c:out value="${post.username}"/></p>
+                        <img src='<c:out value="${post.photo}"/>' class="card-img-top postphoto" alt="Photo animal introuvable">
+                        <div class="card-body">
+                            <div>
+                                <c:out value="${post.description}"/>
+                            </div>
+                            <span id="heart"><i class="fa fa-heart-o fa-2xl" aria-hidden="true" ></i> </span>
+                            <p id="counter"> 10k </p>
+                        </div>
                     </div>
-                </div>
-
-
-
-                <div class="card">
-                    <h5 class="card-title">Ceci est un second post</h5>
-                    <p class="card-text" > gerard </p>
-                    <img src="..." class="card-img-top" alt="Photo animal introuvable">
-                    <div class="card-body">
-                        <span id="heart1"><i class="fa fa-heart-o fa-2xl" aria-hidden="true" ></i> </span>
-                        <p id="counter"> 2k </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h5 class="card-title">Ceci est un second post</h5>
-                    <p class="card-text" > gerard </p>
-                    <img src="..." class="card-img-top" alt="Photo animal introuvable">
-                    <div class="card-body">
-                        <span id="heart1"><i class="fa fa-heart-o fa-2xl" aria-hidden="true" ></i> </span>
-                        <p id="counter"> 2k </p>
-                    </div>
-                </div>
-
+                </c:forEach>
             </div>
         </div>
     </div>
