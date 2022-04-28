@@ -55,13 +55,15 @@ a:hover {
 }
 
 .btn-info {
-    color: var(--pink);
-    background-color: var(--yellow);
+    color: var(--dark_blue);
+    font-weight: bolder;
+    background-color: var(--orange);
 }
 .btn-info:hover {
-    color: var(--pink);
-    background-color: var(--yellow);
-    border: 1px solid var(--pink);
+    color: var(--dark_blue);
+    font-weight: bolder;
+    background-color: var(--orange);
+    border: 1px solid var(--dark_blue);
 }
 .link-info:focus, .link-info:hover {
     color: var(--pink);

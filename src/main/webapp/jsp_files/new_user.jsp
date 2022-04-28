@@ -39,8 +39,8 @@
           </div>
 
           <form action="Servlet_Create_Account" method="post">
-            <h2> Mes identifiants </h2>
-            <div  class="form-outline mb-4" >
+            <h1> Mes identifiants </h1>
+            <div  class=" row form-outline mb-4" >
                 <label for="username"> Pseudo </label>
                 <input type="text" name="username" id="username" required="required">
 
@@ -52,7 +52,7 @@
                 </c:if>
 
             </div>
-            <div  class="form-outline mb-4">
+            <div  class=" row form-outline mb-4">
                 <label for="email"> Email </label>
                 <input type="email" name="email" id="email" required="required">
 
@@ -63,7 +63,7 @@
 
                 </c:if>
             </div>
-            <div  class="form-outline mb-4" >
+            <div  class=" row form-outline mb-4" >
                 <label for="password1"> Mot de passe (8 characters minimum)
                     <input type="password" name="password1" id="password1" minlength="8" value="" class="form-control" required="required" ></label>
                 <br>

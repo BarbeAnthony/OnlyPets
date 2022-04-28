@@ -57,10 +57,12 @@ section{
 
   .btn-info {
     color: var(--orange);
+      font-weight: bolder;
     background-color: var(--blue);
   }
   .btn-info:hover {
-    color: var(--pink);
+    color: var(--orange);
+      font-weight: bolder;
     background-color: var(--blue);
     border: 1px solid var(--orange);
   }

@@ -46,13 +46,13 @@
 
           <form  action="Servlet_Login" method="post" id="loginform">
             <!-- Email input -->
-            <div class="form-outline mb-4">
+            <div class="row form-outline mb-4">
               <label for="email"> Email :</label> <br>
               <input type="email" id="email" name="email" required="required">
             </div>
 
             <!-- Password input -->
-            <div class="form-outline mb-4">
+            <div class=" row form-outline mb-4">
               <label for="password"> Mot de passe :</label><br>
               <input type="password" id="password" name="password" required="required">
             </div>
