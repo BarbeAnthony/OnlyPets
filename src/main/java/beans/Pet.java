@@ -2,6 +2,7 @@ package beans;
 
 public class Pet {
 
+    private int petID = -1;
     private int userID;
     private String name;
     private String species;
@@ -27,7 +28,8 @@ public class Pet {
     @Override
     public String toString() {
         return "Pet{" +
-                "userID=" + userID +
+                "petID=" + petID +
+                ", userID=" + userID +
                 ", name='" + name + '\'' +
                 ", species='" + species + '\'' +
                 ", presentation='" + presentation + '\'' +
@@ -37,6 +39,15 @@ public class Pet {
 
 
     //GETTERS AND SETTERS
+
+
+    public int getPetID() {
+        return petID;
+    }
+
+    public void setPetID(int petID) {
+        this.petID = petID;
+    }
 
     public int getUserID() {
         return userID;
