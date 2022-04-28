@@ -32,6 +32,7 @@ public class Post {
 
     // Getters et Setters
 
+
     public int getPetID() {
         return petID;
     }

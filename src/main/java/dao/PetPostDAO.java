@@ -1,10 +1,13 @@
 package dao;
 
-import beans.Post;
+import beans.PetPost;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
-public class PostDAO {
+public class PetPostDAO {
     private Connection connexion = null;
 
     public void initialisation(){
@@ -32,32 +35,14 @@ public class PostDAO {
         }
     }
 
-    public void addPost(Post post){
+    public void addPetPost(PetPost petPost){
         try {
             Statement statement = connexion.createStatement();
-            String requete = "INSERT INTO posts VALUES(default, " + post.getPetID() + ",'" +
-                    post.getTitle().replace("'", "''") + "','" +
-                    post.getPhoto().replace("'", "''") + "','" +
-                    post.getDescription().replace("'", "''")+"');";
-
+            String requete = "INSERT INTO petPost VALUES(default, " + petPost.getPetID() + "," +
+                    petPost.getPostID() + ");";
             statement.executeUpdate(requete);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-    }
-
-    public int getLastInsertId(){
-        int lastInsertId = -1;
-        try {
-            Statement statement = connexion.createStatement();
-            String requete = "SELECT LAST_INSERT_ID();";
-            ResultSet rs = statement.executeQuery(requete);
-            if (rs.next() != false) {
-                lastInsertId = rs.getInt("LAST_INSERT_ID()");
-            }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        return lastInsertId;
     }
 }
