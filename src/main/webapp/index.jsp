@@ -54,7 +54,7 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./jsp_files/my_account.jsp">Mon Compte</a>
+                        <a class="dropdown-item" href="Servlet_My_Account">Mon Compte</a>
                         <a class="dropdown-item" href="Servlet_Logout">Logout</a>
                     </div>
                 </li>

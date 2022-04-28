@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    --orange: #f68741 ;
+    --yellow:#fcdf87;
+    --hover_yellow :#dabd66e5;
+    --pink: #ef0195;
+    --blue:#1b96f3 ;
+    --dark_blue: #10133a ;
+    --black : black;
+    --white : white;
+
+
+}
+
+section{
+    margin-bottom: 20%;
+}
+.rounded-t-5 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+@media (min-width: 992px) {
+    .rounded-tr-lg-0 {
+        border-top-right-radius: 0;
+    }
+
+    .rounded-bl-lg-5 {
+        border-bottom-left-radius: 0.5rem;
+    }
+}
+
+.card {
+    margin: 10% 5%;
+    margin-bottom: 20%;
+}
+
+.pr-5, .px-5 {
+    padding-right: 3rem !important;
+    margin-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-info {
+    font-weight: bolder;
+}
+.btn-info:hover {
+    font-weight: bolder;
+}
+
+/*NEW USER JSP*/
+
+.color-new-user, .color-new-user:hover, color-new-user:focus {
+    color: var(--orange);
+}
+
+.color-new-user.btn-info:hover {
+    border: 1px solid var(--orange);
+}
+
+.background-new-user{
+    background-color: var(--blue);
+}
+
+/*NEW PET JSP*/
+
+.background-new-pet {
+    background-color: var(--orange);
+}
+
+a.color-new-pet, a.color-new-pet:hover, .link-info.color-new-pet:focus, .link-info.color-new-pet:hover{
+    color: var(--pink);
+}
+
+.color-new-pet.btn-info:hover {
+    border: 1px solid var(--dark_blue);
+}
+
+.color-new-pet.btn-info, color-new-pet.btn-info:hover {
+    color: var(--dark_blue);
+}
+
+/*NEW POST JSP*/
+
+.background-new-post {
+    background-color: var(--pink);
+}
+
+a.color-new-post, a.color-new-post:hover, .link-info.color-new-post:focus, .link-info.color-new-post:hover{
+    color: var(--orange);
+}
+
+.color-new-post.btn-info:hover {
+    border: 1px solid var(--orange);
+}
+
+.color-new-post.btn-info, color-new-post.btn-info:hover {
+    color: var(--white);
+}
+
+/*USER LOGIN JSP*/
+
+.color-user-login, .color-user-login:hover, color-user-login:focus {
+    color: var(--pink);
+}
+
+.color-user-login.btn-info:hover {
+    border: 1px solid var(--pink);
+}
+
+.background-user-login{
+    background-color: var(--yellow);
+}
