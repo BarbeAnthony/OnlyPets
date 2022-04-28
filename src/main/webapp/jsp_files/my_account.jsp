@@ -91,7 +91,7 @@
         <div class="col-9" id="userAnimalFeed">
             <h1> Bienvenue,<c:out  value="${username}"/> </h1>
             <h3> Vos animaux</h3>
-            <a  class="btn btn-primary" href="new_pet.jsp" role="button"> Ajouter un animal </a>
+            <a  class="btn btn-primary" href="./jsp_files/new_pet.jsp" role="button"> Ajouter un animal </a>
 
             <c:forEach items="${petList}" var="pet">
                 <div class="card">
