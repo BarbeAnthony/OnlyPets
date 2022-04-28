@@ -83,7 +83,6 @@
             <h3> Paramètre compte</h3>
            <ul>
                <li> <a> Modifier vos information </a></li>
-               <li> <a> Ajouter un nouvel animal </a></li>
                <li> <a> Supprimer votre compte </a></li>
            </ul>
         </div>
@@ -92,7 +91,7 @@
             <h1> Bienvenue,<c:out  value="${username}"/> </h1>
             <h3> Vos animaux</h3>
             <a  class="btn btn-primary" href="./jsp_files/new_pet.jsp" role="button"> Ajouter un animal </a>
-
+            <a  class="btn btn-primary" href="Servlet_New_Post" role="button"> Ajouter un post </a>
             <c:forEach items="${petList}" var="pet">
                 <div class="card">
                     <h5 class="card-title"> <c:out value="${pet.name}"/></h5>
