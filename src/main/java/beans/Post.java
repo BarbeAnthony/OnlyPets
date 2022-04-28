@@ -3,14 +3,14 @@ package beans;
 public class Post {
 
     private int petID = -1;
-    private String titre;
+    private String title;
     private String photo;
     private String description;
 
     // Constructor
     public Post(int petID, String titre, String photo, String description) {
         this.petID = petID;
-        this.titre = titre;
+        this.title = titre;
         this.photo = photo;
         this.description = description;
     }
@@ -24,7 +24,7 @@ public class Post {
     public String toString() {
         return "Post{" +
                 "petID=" + petID +
-                ", titre='" + titre + '\'' +
+                ", titre='" + title + '\'' +
                 ", photo='" + photo + '\'' +
                 ", description='" + description + '\'' +
                 '}';
@@ -41,11 +41,11 @@ public class Post {
     }
 
     public String getTitre() {
-        return titre;
+        return title;
     }
 
     public void setTitre(String titre) {
-        this.titre = titre;
+        this.title = titre;
     }
 
     public String getPhoto() {
