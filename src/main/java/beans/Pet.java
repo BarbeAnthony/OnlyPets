@@ -1,7 +1,6 @@
 package beans;
 
 public class Pet {
-
     private int petID = -1;
     private int userID;
     private String name;
@@ -13,6 +12,14 @@ public class Pet {
 
     public Pet(int userID, String name, String species, String presentation, String birthday) {
         //TODO gérer le cas où le birthday n'a pas été saisi
+        this.userID = userID;
+        this.name = name;
+        this.species = species;
+        this.presentation = presentation;
+        this.birthday = birthday;
+    }
+    public Pet(int petID, int userID, String name, String species, String presentation, String birthday) {
+        this.petID = petID;
         this.userID = userID;
         this.name = name;
         this.species = species;

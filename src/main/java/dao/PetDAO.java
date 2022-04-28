@@ -3,6 +3,8 @@ package dao;
 import beans.Pet;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PetDAO {
 
@@ -62,21 +64,21 @@ public class PetDAO {
         return lastInsertId;
     }
 
-    /* TODO A supprimer si pas besoin d'adapter pour users
-    public List<Appartement> retournerTousLesAppartements() {
-        List<Appartement> appartList = new ArrayList<>();
-        try {
+    public List<Pet> lesPetDunUser( String username){
+        List<Pet> petList = new ArrayList<>();
+        try{
             Statement statement = connexion.createStatement();
-            String requete = "SELECT * FROM appartements;";
+            String requete = "SELECT p.ID,p.userID, p.name, p.species, p.presentation , p.birthday  from pets p join userpets u on p.ID = u.petID join users u2 on u2.ID = u.userID where u2.username = '" + username+"';";
             ResultSet rs = statement.executeQuery(requete);
             while (rs.next()) {
-                Appartement appart = new Appartement(rs.getInt("pieces"), rs.getInt("surface"), rs.getString("murs"), rs.getString("sol"));
-                appartList.add(appart);
+                Pet pet = new Pet(rs.getInt("ID"), rs.getInt("userID"), rs.getString("name"), rs.getString("species"),rs.getString("presentation"), rs.getString("birthday"));
+                petList.add(pet);
             }
-        } catch (SQLException e) {
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
-        return appartList;
+        return petList;
     }
-    */
+
 }
