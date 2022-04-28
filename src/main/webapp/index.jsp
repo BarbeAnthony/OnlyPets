@@ -31,7 +31,7 @@
     <nav class=" navbar-nav-scroll navbar navbar-expand-lg navbar-light ">
         <div>
         <a class="navbar-brand" href="Servlet_Default_Index"  id="titleLogo">
-            <img src="images/logo.png" alt="" width="50" height="45">
+            <img src="images/logo.png" alt="" width="60" height="55">
             oNLYpETS 
         </a>
         </div>
@@ -82,12 +82,15 @@
       <div class="container-fluid">
         <!-- Content here -->
         <div class="row">
-            <div id="filtercol" class="col-3"> 
+            <div id="filtercol" class="col-3">
                 <h1> Filtres </h1>
-
+                <br>
                 <form method="get" action="" id="filter">
-                    <label for="espece"> Espèce </label> <br>
-                    <select id="espece" class="form-select " multiple aria-label=".form-select-sm example">
+
+                  <br>
+                  <div class="form-group">
+                    <h2> Catégories</h2>
+                    <select id="espece" class="form-control " multiple aria-label=".form-select-sm example">
                         <option disabled> -- Selection --</option>
                         <option value="chats"> Chats</option>
                         <option value="chiens"> Chiens</option>
@@ -97,43 +100,46 @@
                         <option value="reptiles">Reptiles</option>
                         <option value="autres"> Autres </option>
                       </select>
-                      <br>
-                    <a id="birthday" class="btn btn-primary" href="" role="button">Joyeux Anniversaire</a>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <a id="birthday" class="btn btn-primary" href="" role="button">Joyeux Anniversaire</a>
+                    </div>
+                    <br>
+                    <div id="filter_specifique" class="form-group">
+                      <input class="form-check-input" class="radio" type="checkbox" value="recent" id="recent">
+                      <label class="form-check-label" for="recent">
+                      Les plus récents
+                      </label>
+                        <br>
+                      <input class="form-check-input" class="radio" type="checkbox" value="ancien" id="ancien">
+                      <label class="form-check-label" for="ancien">
+                       Les plus anciens
+                      </label>
+                        <br>
+                      <input class="form-check-input" class="radio" type="checkbox" value="croissant" id="croissant">
+                      <label class="form-check-label" for="croissant">
+                      de A à Z
+                      </label>
+                        <br>
+                      <input class="form-check-input" class="radio" type="checkbox" value="decroissant" id="decroissant">
+                      <label class="form-check-label" for="decroissant">
+                       de Z à A
+                      </label>
+                        <br>
+                      <input class="form-check-input" class="radio" type="checkbox" value="aimer" id="aimer">
+                      <label class="form-check-label" for="aimer">
+                       Les plus likés
+                      </label>
+                        <br>
+                      <input class="form-check-input" class="radio" type="checkbox" value="moin_aimer" id="moin_aimer">
+                      <label class="form-check-label" for="moin_aimer">
+                       Les moins likés
+                      </label>
+                    </div>
+              
 
-
-                      <div id="filter_specifique" class="form-check">
-                        <input class="form-check-input" class="radio" type="checkbox" value="recent" id="recent">
-                        <label class="form-check-label" for="recent">
-                        Les plus récents
-                        </label>
-                          <br>
-                        <input class="form-check-input" class="radio" type="checkbox" value="ancien" id="ancien">
-                        <label class="form-check-label" for="ancien">
-                         Les plus anciens
-                        </label>
-                          <br>
-                        <input class="form-check-input" class="radio" type="checkbox" value="croissant" id="croissant">
-                        <label class="form-check-label" for="croissant">
-                        de A à Z
-                        </label>
-                          <br>
-                        <input class="form-check-input" class="radio" type="checkbox" value="decroissant" id="decroissant">
-                        <label class="form-check-label" for="decroissant">
-                         de Z à A
-                        </label>
-                          <br>
-                        <input class="form-check-input" class="radio" type="checkbox" value="aimer" id="aimer">
-                        <label class="form-check-label" for="aimer">
-                         Les plus likés
-                        </label>
-                          <br>
-                        <input class="form-check-input" class="radio" type="checkbox" value="moin_aimer" id="moin_aimer">
-                        <label class="form-check-label" for="moin_aimer">
-                         Les moins likés
-                        </label>
-                        </div>
-
-                      <input type="submit" value="Filtrer" name="filtrer" id="filtrer">
+                      <input class="btn-primary" type="submit" value="Filtrer" name="filtrer" id="filtrer">
                 </form>
 
             </div>
@@ -145,16 +151,14 @@
 
                 <% System.out.print(request.getAttribute("postList"));%>
                 <c:forEach items="${postList}" var="post">
-                    <div class=" card">
+                    <div class="card">
                         <h5 class="card-title"> <c:out value="${post.title}"/></h5>
-                        <p class="card-text" >  <c:out value="${post.petname}"/> - <c:out value="${post.username}"/></p>
+                        <p class="card-text" >  <c:out value="${post.petname}"/> -  <c:out value="${post.username}"/></p>
                         <img src='<c:out value="${post.photo}"/>' class="card-img-top postphoto" alt="Photo animal introuvable">
                         <div class="card-body">
-                            <div>
-                                <c:out value="${post.description}"/>
-                            </div>
-                            <span id="heart"><i class="fa fa-heart-o fa-2xl" aria-hidden="true" ></i> </span>
-                            <p id="counter"> 10k </p>
+                            <p class="card-text"><c:out value="${post.description}"/> </p>
+                            <p id="heart"><i class="fa fa-heart-o fa-2xl" aria-hidden="true" ></i>  <p id="counter"> 10k </p> </p>
+
                         </div>
                     </div>
                 </c:forEach>

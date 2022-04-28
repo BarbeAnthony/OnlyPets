@@ -14,51 +14,49 @@
   }
   
   /*  Navbar */
-.navbar{
-    background-color: var(--yellow);
-}
-#titleLogo{
-    font-weight: bolder;
-    color: var(--pink);
-}
+  .navbar{
+      background-color: var(--yellow);
+  }
+  #titleLogo{
+      font-weight: bolder;
+      color: var(--pink);
+  }
 
-.navbar-brand:hover{
-    background-color:var(--hover_yellow);
-    border-radius: 15px;
-}
-#search{
-    margin-right: 15%;
-}
-#researchbtn{
-    float: left;
-    width: 20%;
-    color: white;
-    font-size: 17px;
-    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
-    border-left: none; /* Prevenrgba(24, 23, 23, 0.548)s */
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    outline: none;
-}
-#researchbtn:hover{
-    background-color:var(--hover_yellow);
-}
+  .navbar-brand:hover{
+      background-color:var(--hover_yellow);
+      border-radius: 15px;
+  }
+  #search{
+      margin-right: 15%;
+  }
+  #researchbtn{
+      float: left;
+      width: 20%;
+      color: white;
+      font-size: 17px;
+      box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+      border-left: none; /* Prevenrgba(24, 23, 23, 0.548)s */
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      outline: none;
+  }
+  #researchbtn:hover{
+      background-color:var(--hover_yellow);
+  }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover{
-    background-color: var(--hover_yellow);
-    border-radius: 15px;
+  .navbar-expand-lg .navbar-nav .nav-link:hover{
+      background-color: var(--hover_yellow);
+      border-radius: 15px;
 
-}
-
-
+  }
 
   /*  Container */
 .btn-primary{
     color: var(--white);
     font-weight: bolder;
-    background-color: var(--pink);
+    background-color: var(--blue);
     border: none;
     border-radius: 40px;
     text-align: center;
@@ -68,108 +66,80 @@
     cursor: pointer;
     margin : 2% 5%;
 
-}
-.btn-primary:hover {
-    background-color: var(--pink);
-    border: 1px var(--blue) solid;
-}
-
+  }
+  .btn-primary:hover {
+      background-color: var(--dark_blue);
+  }
+ h1{
+     font-weight: bolder;
+ }
   /* Filter */
   #filtercol, #userInfoUpdate{
     padding: 2%;
     background-color: var(--hover_yellow);
-      border-top: var(--orange) 3px dotted;
-      border-bottom:  var(--orange) 3px dotted;
+    border-top: var(--orange) 3px dotted;
+    border-bottom:  var(--orange) 3px dotted;
 
+  }
+
+  #espece:focus{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  #filter_specifique{
+      margin-top: 10%;
+      padding-left: 3%;
+  }
+
+#filter_specifique input {
+    margin-top: 5%;
+    margin-left: 3%;
 }
 
-#espece:focus{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+#filter_specifique label {
+    margin-left: 15%;
+    margin-top: 5%;
 
-
-#birthday{
-    margin: 0;
-    background-color: gray;
-}
-
-#filter_specifique{
-    margin-top: 10%;
 }
 
 #filtrer{
-    margin: 2%;
-    width: 50%;
-    height: 15%;
-    padding: 3%;
-    margin-top: 40%;
-    margin-left: 10%;
-    border: none;
-    outline: none;
-    border: 1px solid var(--pink);
-    color: var(--black);
-    border-radius: 40px;
-    text-align: center;
-    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-#filtrer:hover{
-    background: var(--pink);
-    color: var(--white);
-
+    padding: 2% 30%;
 }
   /* Feed */
 
 #feed, #userAnimalFeed{
     padding: 2%;
-}
-  /* Feed */
+  }
+
   .card {
     margin : 2% 5%;
-    border-radius: 15px;
-    padding: 2%;
+    border-radius: 10px;
     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
-}
+  }
 
   .card-title{
     display: inline;
     background-color: var(--blue);
-    padding: 3%;
-    border-radius: 15px;
+    border-radius: 10px 10px 0 0;
+      padding: 2% 5%;
   }
-.postphoto{
-
-}
- 
-  .card-body{
+  .card-text, .card-body{
+    padding-left: 5%;
       text-align: center;
   }
-  .card-text{
+  .heart{
 
   }
-  .fa-heart-o {
+  .fa-heart-o, .fa-heart {
     color: var(--pink);
     cursor: pointer;
   }
-  
-  .fa-heart {
-    color: var(--pink);
-    cursor: pointer;
-  }
-  
 
     /* Footer */
 
-.footer{
+.footer, .cpr{
     background-color: rgb(241, 241, 241) ;
 }
-.cpr{
-    background-color: rgb(241, 241, 241) ;
-}
-
 .lk{
     text-align: left;
 }
