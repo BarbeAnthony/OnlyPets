@@ -55,6 +55,7 @@ public class Servlet_Submit_New_Post extends HttpServlet {
         petPostDAO.cloture();
 
         // Appel jsp suivant
+        // TODO : problem de redirection apres avoir creer un post, retour a la page d'acceuil vide
         this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
 
