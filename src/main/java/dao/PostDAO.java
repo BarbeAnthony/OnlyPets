@@ -1,8 +1,11 @@
 package dao;
 
+import beans.Pet;
 import beans.Post;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PostDAO {
     private Connection connexion = null;
@@ -60,4 +63,30 @@ public class PostDAO {
         }
         return lastInsertId;
     }
+
+    public List<Post> lesXdernierposts(int nbpost){
+        List<Post> postList = new ArrayList<>();
+        int compteurPosts = 0;
+        try{
+            Statement statement = connexion.createStatement();
+            String requete = "select posts.ID, pets.name, users.username, posts.title ,posts.photo ,posts.description, posts.petID from posts " +
+                    "inner join petpost on petpost.postID = posts.ID " +
+                    "inner join pets on petpost.petID = pets.ID " +
+                    "inner join userpets on userpets.petID = pets.ID " +
+                    "inner join users on userpets.userID  = users.ID order by ID desc ;";
+            ResultSet rs = statement.executeQuery(requete);
+            while (rs.next()&&compteurPosts<nbpost) {
+                Post post = new Post(rs.getInt("ID"), rs.getInt("petID"), rs.getString("title"),
+                        rs.getString("photo"),rs.getString("description"), rs.getString("name"),
+                        rs.getString("username"));
+                postList.add(post);
+                compteurPosts++;
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return postList;
+    }
+
 }
