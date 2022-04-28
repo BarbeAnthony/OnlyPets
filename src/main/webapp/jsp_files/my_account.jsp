@@ -26,7 +26,7 @@
 
 <nav class=" navbar-nav-scroll navbar navbar-expand-lg navbar-light ">
     <div>
-        <a class="navbar-brand" href="index.jsp"  id="titleLogo">
+        <a class="navbar-brand" href="Servlet_Default_Index"  id="titleLogo">
             <img src="images/logo.png" alt="" width="50" height="45">
             oNLYpETS
         </a>
@@ -145,7 +145,7 @@
                         Website
                     </h6>
                     <p>
-                        <a href="index.jsp" class="text-reset">Home</a>
+                        <a href="Servlet_Default_Index" class="text-reset">Home</a>
                     </p>
                     <p>
                         <a href="Servlet_Create_Account" class="text-reset"> New User</a>
