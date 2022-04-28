@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/logo.png" />
+    <link rel="icon" href="images/logo.png" />
 
     <!-- Font library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <title id="mainTitle"> oNLYpETS</title>
 </head>
 <body>
@@ -26,8 +26,8 @@
 
 <nav class=" navbar-nav-scroll navbar navbar-expand-lg navbar-light ">
     <div>
-        <a class="navbar-brand" href="../index.jsp"  id="titleLogo">
-            <img src="../images/logo.png" alt="" width="50" height="45">
+        <a class="navbar-brand" href="index.jsp"  id="titleLogo">
+            <img src="images/logo.png" alt="" width="50" height="45">
             oNLYpETS
         </a>
     </div>
@@ -50,7 +50,7 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../jsp_files/my_account.jsp">Mon Compte</a>
+                        <a class="dropdown-item" href="jsp_files/my_account.jsp">Mon Compte</a>
                         <a class="dropdown-item" href="Servlet_Logout">Logout</a>
                     </div>
                 </li>

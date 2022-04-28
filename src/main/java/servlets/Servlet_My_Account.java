@@ -23,7 +23,7 @@ public class Servlet_My_Account extends HttpServlet {
         request.setAttribute("petList", petList);
         petDao.cloture();
 
-        this.getServletContext().getRequestDispatcher("/my_account.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/jsp_files/my_account.jsp").forward(request, response);
     }
 
     @Override
