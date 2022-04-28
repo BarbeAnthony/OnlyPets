@@ -21,7 +21,7 @@ public class Servlet_Logout extends HttpServlet {
         HttpSession session = request.getSession();
         session.invalidate();
 
-        setCookie(response,"email","lamort",0);
+        setCookie(response,"username","lamort",0);
 
         this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
 
