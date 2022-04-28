@@ -8,9 +8,9 @@ public class Post {
     private String description;
 
     // Constructor
-    public Post(int petID, String titre, String photo, String description) {
+    public Post(int petID, String title, String photo, String description) {
         this.petID = petID;
-        this.title = titre;
+        this.title = title;
         this.photo = photo;
         this.description = description;
     }
@@ -24,7 +24,7 @@ public class Post {
     public String toString() {
         return "Post{" +
                 "petID=" + petID +
-                ", titre='" + title + '\'' +
+                ", title='" + title + '\'' +
                 ", photo='" + photo + '\'' +
                 ", description='" + description + '\'' +
                 '}';
@@ -40,12 +40,12 @@ public class Post {
         this.petID = petID;
     }
 
-    public String getTitre() {
+    public String getTitle() {
         return title;
     }
 
-    public void setTitre(String titre) {
-        this.title = titre;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getPhoto() {

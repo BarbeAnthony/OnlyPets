@@ -1,6 +1,6 @@
 package dao;
 
-import beans.Pet;
+import beans.Post;
 
 import java.sql.*;
 
@@ -35,11 +35,11 @@ public class PostDAO {
     public void addPost(Post post){
         try {
             Statement statement = connexion.createStatement();
-            String requete = "INSERT INTO pets VALUES(default, " + post.getUserID() + ",'" +
-                    post.getName().replace("'", "''") + "','" +
-                    post.getSpecies().replace("'", "''") + "','" +
-                    post.getPresentation().replace("'", "''") + "','" +
-                    post.getBirthday().replace("'", "''") + "');";
+            String requete = "INSERT INTO post VALUES(default, " + post.getPetID() + ",'" +
+                    post.getTitle().replace("'", "''") + "','" +
+                    post.getPhoto().replace("'", "''") + "','" +
+                    post.getDescription().replace("'", "''")+"');";
+
             statement.executeUpdate(requete);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
