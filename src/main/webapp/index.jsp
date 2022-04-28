@@ -22,7 +22,11 @@
     <title id="mainTitle"> oNLYpETS</title>
 </head>
 <body>
-
+    <c:if test="${empty sessionScope.username}">
+        <c:if test="${not empty cookie.username.value}">
+            <c:set var="username" value="${cookie.username.value}" scope="session"  />
+        </c:if>
+    </c:if>
 
     <nav class=" navbar-nav-scroll navbar navbar-expand-lg navbar-light ">
         <div>
