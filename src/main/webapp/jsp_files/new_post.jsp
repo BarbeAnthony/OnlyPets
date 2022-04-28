@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="../stylesheets/style.css">
-    <link rel="stylesheet" href="../stylesheets/new_post.css">
+    <link rel="stylesheet" href="../stylesheets/formulaire.css">
     <title id="mainTitle"> Nouveau Post </title>
 </head>
 
 
-<body>
+<body class="background-new-post">
 
 <section class=" text-center text-lg-start">
 
@@ -35,7 +35,7 @@
                 <div class="card-body py-5 px-md-5">
                     <div class="px-5 ms-xl-4">
                         <i class="fa-solid fa-paw fa-2x me-3 pt-5 mt-xl-4"></i>
-                        <a href="../index.jsp" class="h1 fw-bold mb-0">oNLYpETS</a>
+                        <a href="../index.jsp" class="h1 fw-bold mb-0  color-new-post">oNLYpETS</a>
                     </div>
 
                     <form action="../Servlet_New_Post" method="post">
@@ -53,7 +53,7 @@
                         <div  class="row form-outline mb-4">
                             <label for="photo"> URL de l'image </label> <br>
                             <input type="text" id="photo" name="post-image" required="required">
-                            <p> Veillez héberger votre image sur <a href="https://www.zupimages.net/" target="_blank" class="link-info">se site.</a> Puis copier l'url ci-dessus.</p>
+                            <p> Veillez héberger votre image sur <a href="https://www.zupimages.net/" target="_blank" class="link-info  color-new-post">se site.</a> Puis copier l'url ci-dessus.</p>
                         </div>
                         <div  class="row form-outline mb-4">
                             <label for="description"> Description du post </label>
@@ -61,7 +61,7 @@
                             <textarea id="description" name="description" rows="6" cols="30"></textarea>
                         </div>
                         <div class="pt-1 mb-4">
-                            <input class="btn btn-info btn-lg btn-block" type="submit" value="Valider"></input>
+                            <input class="btn btn-info btn-lg btn-block background-new-post color-new-post" type="submit" value="Valider"></input>
                         </div>
 
                     </form>

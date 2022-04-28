@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/newUser.css">
+    <link rel="stylesheet" href="stylesheets/formulaire.css">
     <title id="mainTitle"> Créer votre compte</title>
 </head>
 
 
-<body>
+<body class="background-new-user">
 
 <section class=" text-center text-lg-start">
  
@@ -73,12 +73,12 @@
             </div>
 
             <div class="pt-1 mb-4">
-              <input class="btn btn-info btn-lg btn-block" type="submit" value="Valider"></input>
+              <input class="btn btn-info btn-lg btn-block background-new-user color-new-user" type="submit" value="Valider"></input>
             </div>
 
             <div class="row mb-4">
               <div class="col">
-                <p>Déjà membre ? <a href="Servlet_Login" class="link-info">Connectez-vous</a></p>
+                <p>Déjà membre ? <a href="Servlet_Login" class="link-info color-new-user">Connectez-vous</a></p>
               </div>
             </div>
 
