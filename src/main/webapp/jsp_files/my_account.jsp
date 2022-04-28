@@ -92,19 +92,20 @@
             <h1> Bienvenue,<c:out  value="${username}"/> </h1>
             <h3> Vos animaux</h3>
             <a  class="btn btn-primary" href="new_pet.jsp" role="button"> Ajouter un animal </a>
-            <div class=" card">
-                <h5 class="card-title"> NOM Animal</h5>
-                <p class="card-text" > patrick - maitre gustave</p>
-                <div class="card-body">
-                </div>
-            </div>
 
-            <div class=" card">
-                <h5 class="card-title"> NOM Animal2</h5>
-                <p class="card-text" > patrick - maitre gustave</p>
-                <div class="card-body">
+            <c:forEach items="${petList}" var="pet">
+                <div class="card">
+                    <h5 class="card-title"> <c:out value="${pet.name}"/></h5>
+                    <div class="card-body">
+                        <p>  <c:out value="${pet.species}"/></p>
+                        <p>  <c:out value="${pet.birthday}"/></p>
+                        <div>
+                            <c:out value="${pet.presentation}"/>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+            </c:forEach>
 
         </div>
     </div>
