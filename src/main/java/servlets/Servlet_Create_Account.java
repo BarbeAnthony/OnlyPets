@@ -58,7 +58,7 @@ public class Servlet_Create_Account extends HttpServlet {
         session.setAttribute("username", username);
         setCookie(response,"username",username,COOKIE_MAX_AGE);
 
-        this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/Servlet_Default_Index").forward(request, response);
     }
 
     @Override
