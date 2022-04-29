@@ -120,3 +120,21 @@ a.color-new-post, a.color-new-post:hover, .link-info.color-new-post:focus, .link
 .background-user-login{
     background-color: var(--yellow);
 }
+
+/* BYE JSP*/
+
+.background-bye {
+    background-color: #504f4f;
+}
+
+a.color-bye, a.color-bye:hover, .link-info.color-bye:focus, .link-info.color-new-post:hover{
+    color: #504f4f;
+}
+
+.color-bye.btn-info:hover {
+    border: 1px solid #504f4f;
+}
+
+.color-bye.btn-info, color-bye.btn-info:hover {
+    color: var(--white);
+}
