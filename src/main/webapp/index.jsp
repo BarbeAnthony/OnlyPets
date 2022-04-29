@@ -179,7 +179,6 @@
                     <a class="btn btn-primary" href="Servlet_New_Post" role="button">Ajouter un post</a>
                 </c:if>
 
-                <% System.out.print(request.getAttribute("postList"));%>
                 <c:forEach items="${postList}" var="post">
                     <div class="card">
                         <h5 class="card-title"> <c:out value="${post.title}"/></h5>
