@@ -134,22 +134,22 @@
                     </div>
                     <br>
                     <div id="filter_specifique" class="form-group">
-                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="recent" id="recent">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="youngerFirst" id="recent">
                       <label class="form-check-label" for="recent">
                       Les plus récents
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="ancien" id="ancien">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="olderFirst" id="ancien">
                       <label class="form-check-label" for="ancien">
                        Les plus anciens
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="croissant" id="croissant">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="AtoZ" id="croissant">
                       <label class="form-check-label" for="croissant">
                       de A à Z
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="decroissant" id="decroissant">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="ZtoA" id="decroissant">
                       <label class="form-check-label" for="decroissant">
                        de Z à A
                       </label>
