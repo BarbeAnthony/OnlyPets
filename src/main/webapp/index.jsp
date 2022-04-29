@@ -85,44 +85,44 @@
             <div id="filtercol" class="col-3">
                 <h1> Filtres </h1>
                 <br>
-                <form method="get" action="" id="filter">
+                <form method="get" action="Servlet_Custom_Index" id="filter">
 
                   <br>
                   <div class="form-group">
                     <h2> Catégories</h2>
 
                       <div id="filter_specice" class="form-group">
-                          <input class="form-check-input" type="checkbox" name="chat" value="chat" id="chat">
+                          <input class="form-check-input" type="checkbox" name="species" value="chat" id="chat">
                           <label class="form-check-label" for="chat">
                               Chats
                           </label>
                           <br>
-                          <input class="form-check-input" type="checkbox" name="chien" value="chien" id="chien">
+                          <input class="form-check-input" type="checkbox" name="species" value="chien" id="chien">
                           <label class="form-check-label" for="chien">
                               Chiens
                           </label>
                           <br>
-                          <input class="form-check-input" type="checkbox" name="NAC" value="NAC" id="NAC">
+                          <input class="form-check-input" type="checkbox" name="species" value="NAC" id="NAC">
                           <label class="form-check-label" for="NAC">
                               NAC
                           </label>
                           <br>
-                          <input class="form-check-input" type="checkbox" name="oiseau" value="oiseau" id="oiseau">
+                          <input class="form-check-input" type="checkbox" name="species" value="oiseau" id="oiseau">
                           <label class="form-check-label" for="oiseau">
                               Oiseaux
                           </label>
                           <br>
-                          <input class="form-check-input" type="checkbox" name="poisson" value="poisson" id="poisson">
+                          <input class="form-check-input" type="checkbox" name="species" value="poisson" id="poisson">
                           <label class="form-check-label" for="poisson">
                               Poissons
                           </label>
                           <br>
-                          <input class="form-check-input" type="checkbox" name="reptile" value="reptile" id="reptile">
+                          <input class="form-check-input" type="checkbox" name="species" value="reptile" id="reptile">
                           <label class="form-check-label" for="reptile">
                               Reptiles
                           </label>
                           <br>
-                          <input class="form-check-input" type="checkbox" name="autre" value="autre" id="autre">
+                          <input class="form-check-input" type="checkbox" name="species" value="autre" id="autre">
                           <label class="form-check-label" for="autre">
                               Autres
                           </label>
@@ -132,7 +132,7 @@
                     <div id="filter_specifique" class="form-group">
                         <h2> Trier par </h2>
 
-                        <input class="form-check-input" class="radio" type="radio" name="filtre" value="youngerFirst" id="recent">
+                        <input class="form-check-input" class="radio" type="radio" name="filtre" value="youngerFirst" id="recent" checked="true">
                       <label class="form-check-label" for="recent">
                       Les plus récents
                       </label>
@@ -152,6 +152,7 @@
                        de Z à A
                       </label>
                         <br>
+                        <!-- TODO A réactiver si les likes sont implémentés
                       <input class="form-check-input" class="radio" type="radio" name="filtre" value="aimer" id="aimer">
                       <label class="form-check-label" for="aimer">
                        Les plus likés
@@ -161,6 +162,7 @@
                       <label class="form-check-label" for="moin_aimer">
                        Les moins likés
                       </label>
+                      -->
                     </div>
               
 

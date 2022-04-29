@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/formulaire.css">
-    <title id="mainTitle"> Déconnecter</title>
+    <title id="mainTitle"> Déconnecté</title>
 </head>
 <body class="background-bye">
 
