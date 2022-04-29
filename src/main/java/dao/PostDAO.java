@@ -89,4 +89,59 @@ public class PostDAO {
         return postList;
     }
 
+    public List<Post> customFilter(List<String> selectedSpecies, String selectedSort, int nbpost){
+        List<Post> postList = new ArrayList<>();
+        int compteurPosts = 0;
+        String whereRequest = "";
+        String sortRequest = "ORDER BY ";
+
+        //Construction de la composante WHERE de la requete sql
+        if (selectedSpecies.size() > 0) {
+            whereRequest += "WHERE pets.species IN (";
+            for (String species:selectedSpecies) {
+                whereRequest += "'" + species.replace("'", "''") + "', ";
+            }
+            whereRequest = whereRequest.substring(0, whereRequest.length()-2);
+            whereRequest += ") ";
+        }
+
+        //Construction de la composante ORDER BY de la requete SQL
+        switch (selectedSort) {
+            case "olderFirst" :
+                sortRequest += "ID";
+                break;
+            case "AtoZ" :
+                sortRequest += "name";
+                break;
+            case "ZtoA" :
+                sortRequest += "name desc";
+                break;
+            default :
+                sortRequest += "ID desc";
+        }
+
+        try{
+            Statement statement = connexion.createStatement();
+            String requete = "select posts.ID, pets.name, users.username, posts.title ,posts.photo ,posts.description, posts.petID from posts " +
+                    "inner join petpost on petpost.postID = posts.ID " +
+                    "inner join pets on petpost.petID = pets.ID " +
+                    "inner join userpets on userpets.petID = pets.ID " +
+                    "inner join users on userpets.userID  = users.ID " +
+                    whereRequest +
+                    sortRequest + ";";
+            ResultSet rs = statement.executeQuery(requete);
+            while (rs.next()&&compteurPosts<nbpost) {
+                Post post = new Post(rs.getInt("ID"), rs.getInt("petID"), rs.getString("title"),
+                        rs.getString("photo"),rs.getString("description"), rs.getString("name"),
+                        rs.getString("username"));
+                postList.add(post);
+                compteurPosts++;
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return postList;
+    }
+
 }

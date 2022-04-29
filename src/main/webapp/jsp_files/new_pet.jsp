@@ -56,10 +56,10 @@
                                 <option value="chat">Chat</option>
                                 <option value="chien">Chien</option>
                                 <option value="NAC">NAC</option>
-                                <option value="oiseaux">Oiseaux</option>
-                                <option value="poissons">Poissons</option>
-                                <option value="reptiles">Reptiles</option>
-                                <option value="autres">Autres</option>
+                                <option value="oiseau">Oiseau</option>
+                                <option value="poisson">Poisson</option>
+                                <option value="reptile">Reptile</option>
+                                <option value="autre">Autre</option>
                             </select>
                         </div>
                         <div class=" row form-outline mb-4" >

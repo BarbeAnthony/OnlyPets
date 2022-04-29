@@ -90,49 +90,76 @@
                   <br>
                   <div class="form-group">
                     <h2> Catégories</h2>
-                    <select id="espece" class="form-control " multiple aria-label=".form-select-sm example">
-                        <option disabled> -- Selection --</option>
-                        <option value="chats"> Chats</option>
-                        <option value="chiens"> Chiens</option>
-                        <option value="NAC">NAC</option>
-                        <option value="oiseaux"> Oiseaux</option>
-                        <option value="poissons"> Poissons</option>
-                        <option value="reptiles">Reptiles</option>
-                        <option value="autres"> Autres </option>
-                      </select>
-                    </div>
+
+                      <div id="filter_specice" class="form-group">
+                          <input class="form-check-input" type="checkbox" name="chat" value="chat" id="chat">
+                          <label class="form-check-label" for="chat">
+                              Chats
+                          </label>
+                          <br>
+                          <input class="form-check-input" type="checkbox" name="chien" value="chien" id="chien">
+                          <label class="form-check-label" for="chien">
+                              Chiens
+                          </label>
+                          <br>
+                          <input class="form-check-input" type="checkbox" name="NAC" value="NAC" id="NAC">
+                          <label class="form-check-label" for="NAC">
+                              NAC
+                          </label>
+                          <br>
+                          <input class="form-check-input" type="checkbox" name="oiseau" value="oiseau" id="oiseau">
+                          <label class="form-check-label" for="oiseau">
+                              Oiseaux
+                          </label>
+                          <br>
+                          <input class="form-check-input" type="checkbox" name="poisson" value="poisson" id="poisson">
+                          <label class="form-check-label" for="poisson">
+                              Poissons
+                          </label>
+                          <br>
+                          <input class="form-check-input" type="checkbox" name="reptile" value="reptile" id="reptile">
+                          <label class="form-check-label" for="reptile">
+                              Reptiles
+                          </label>
+                          <br>
+                          <input class="form-check-input" type="checkbox" name="autre" value="autre" id="autre">
+                          <label class="form-check-label" for="autre">
+                              Autres
+                          </label>
+                      </div>
+                  </div>
                     <br>
                     <div class="form-group">
                       <a id="birthday" class="btn btn-primary" href="" role="button">Joyeux Anniversaire</a>
                     </div>
                     <br>
                     <div id="filter_specifique" class="form-group">
-                      <input class="form-check-input" class="radio" type="checkbox" value="recent" id="recent">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="youngerFirst" id="recent">
                       <label class="form-check-label" for="recent">
                       Les plus récents
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="ancien" id="ancien">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="olderFirst" id="ancien">
                       <label class="form-check-label" for="ancien">
                        Les plus anciens
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="croissant" id="croissant">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="AtoZ" id="croissant">
                       <label class="form-check-label" for="croissant">
                       de A à Z
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="decroissant" id="decroissant">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="ZtoA" id="decroissant">
                       <label class="form-check-label" for="decroissant">
                        de Z à A
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="aimer" id="aimer">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="aimer" id="aimer">
                       <label class="form-check-label" for="aimer">
                        Les plus likés
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="moin_aimer" id="moin_aimer">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="moin_aimer" id="moin_aimer">
                       <label class="form-check-label" for="moin_aimer">
                        Les moins likés
                       </label>

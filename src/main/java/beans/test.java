@@ -20,10 +20,12 @@ public class test {
         petDao.initialisation();
         System.out.print(petDao.lesPetDunUser("charlie"));*/
 
+        List<String> speciesList = new ArrayList<>();
+        speciesList.add("chien");
         PostDAO postDAO=new PostDAO();
-        List<Post> postList = new ArrayList<>();
+        List<Post> postList;
         postDAO.initialisation();
-        postList= postDAO.lesXdernierposts(2);
+        postList= postDAO.customFilter(speciesList, "youngerFirst", 20);
 
         for (Post post: postList
              ) {
