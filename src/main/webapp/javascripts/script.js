@@ -12,8 +12,8 @@ $(document).ready(function(){
     });
 
 
-    $('input:checkbox').click(function() {
-        $('input:checkbox').not(this).prop('checked', false);
+    $('#filter_specifique input:checkbox').click(function() {
+        $('#filter_specifique input:checkbox').not(this).prop('checked', false);
     });
 
 

@@ -90,17 +90,44 @@
                   <br>
                   <div class="form-group">
                     <h2> Catégories</h2>
-                    <select id="espece" class="form-control " multiple aria-label=".form-select-sm example">
-                        <option disabled> -- Selection --</option>
-                        <option value="chats"> Chats</option>
-                        <option value="chiens"> Chiens</option>
-                        <option value="NAC">NAC</option>
-                        <option value="oiseaux"> Oiseaux</option>
-                        <option value="poissons"> Poissons</option>
-                        <option value="reptiles">Reptiles</option>
-                        <option value="autres"> Autres </option>
-                      </select>
-                    </div>
+
+                      <div id="filter_specice" class="form-group">
+                          <input class="form-check-input" class="radio" type="radio" value="chat" id="chat">
+                          <label class="form-check-label" for="chat">
+                              Chats
+                          </label>
+                          <br>
+                          <input class="form-check-input" class="radio" type="radio" value="chien" id="chien">
+                          <label class="form-check-label" for="chien">
+                              Chiens
+                          </label>
+                          <br>
+                          <input class="form-check-input" class="radio" type="radio" value="NAC" id="NAC">
+                          <label class="form-check-label" for="NAC">
+                              NAC
+                          </label>
+                          <br>
+                          <input class="form-check-input" class="radio" type="radio" value="oiseau" id="oiseau">
+                          <label class="form-check-label" for="oiseau">
+                              Oiseaux
+                          </label>
+                          <br>
+                          <input class="form-check-input" class="radio" type="radio" value="poisson" id="poisson">
+                          <label class="form-check-label" for="poisson">
+                              Poissons
+                          </label>
+                          <br>
+                          <input class="form-check-input" class="radio" type="radio" value="reptile" id="reptile">
+                          <label class="form-check-label" for="reptile">
+                              Reptiles
+                          </label>
+                          <br>
+                          <input class="form-check-input" class="radio" type="radio" value="autre" id="autre">
+                          <label class="form-check-label" for="autre">
+                              Autres
+                          </label>
+                      </div>
+                  </div>
                     <br>
                     <div class="form-group">
                       <a id="birthday" class="btn btn-primary" href="" role="button">Joyeux Anniversaire</a>
