@@ -86,17 +86,17 @@
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-  #filter_specifique{
-      margin-top: 10%;
+  #filter_specifique, #filter_specice{
+      margin-top: 5%;
       padding-left: 3%;
   }
 
-#filter_specifique input {
+#filter_specifique input, #filter_specice input {
     margin-top: 5%;
     margin-left: 3%;
 }
 
-#filter_specifique label {
+#filter_specifique label, #filter_specice label {
     margin-left: 15%;
     margin-top: 5%;
 
