@@ -47,7 +47,7 @@ public class Servlet_Submit_New_Post extends HttpServlet {
         if (newPostID == -1 || newPostID == 0){
             System.out.println("Erreur, impossible de récupérer l'ID de l'animal crée, impossible de créer un lien animal-post dans la BDD.");
             //TODO insérer message d'erreur
-            this.getServletContext().getRequestDispatcher("/jsp_files/new_post.jsp").forward(request, response);
+            this.getServletContext().getRequestDispatcher("/Servlet_New_Post").forward(request, response);
             return;
         }
 
