@@ -92,37 +92,37 @@
                     <h2> Catégories</h2>
 
                       <div id="filter_specice" class="form-group">
-                          <input class="form-check-input" class="radio" type="radio" value="chat" id="chat">
+                          <input class="form-check-input" type="checkbox" name="chat" value="chat" id="chat">
                           <label class="form-check-label" for="chat">
                               Chats
                           </label>
                           <br>
-                          <input class="form-check-input" class="radio" type="radio" value="chien" id="chien">
+                          <input class="form-check-input" type="checkbox" name="chien" value="chien" id="chien">
                           <label class="form-check-label" for="chien">
                               Chiens
                           </label>
                           <br>
-                          <input class="form-check-input" class="radio" type="radio" value="NAC" id="NAC">
+                          <input class="form-check-input" type="checkbox" name="NAC" value="NAC" id="NAC">
                           <label class="form-check-label" for="NAC">
                               NAC
                           </label>
                           <br>
-                          <input class="form-check-input" class="radio" type="radio" value="oiseau" id="oiseau">
+                          <input class="form-check-input" type="checkbox" name="oiseau" value="oiseau" id="oiseau">
                           <label class="form-check-label" for="oiseau">
                               Oiseaux
                           </label>
                           <br>
-                          <input class="form-check-input" class="radio" type="radio" value="poisson" id="poisson">
+                          <input class="form-check-input" type="checkbox" name="poisson" value="poisson" id="poisson">
                           <label class="form-check-label" for="poisson">
                               Poissons
                           </label>
                           <br>
-                          <input class="form-check-input" class="radio" type="radio" value="reptile" id="reptile">
+                          <input class="form-check-input" type="checkbox" name="reptile" value="reptile" id="reptile">
                           <label class="form-check-label" for="reptile">
                               Reptiles
                           </label>
                           <br>
-                          <input class="form-check-input" class="radio" type="radio" value="autre" id="autre">
+                          <input class="form-check-input" type="checkbox" name="autre" value="autre" id="autre">
                           <label class="form-check-label" for="autre">
                               Autres
                           </label>
@@ -134,32 +134,32 @@
                     </div>
                     <br>
                     <div id="filter_specifique" class="form-group">
-                      <input class="form-check-input" class="radio" type="checkbox" value="recent" id="recent">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="recent" id="recent">
                       <label class="form-check-label" for="recent">
                       Les plus récents
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="ancien" id="ancien">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="ancien" id="ancien">
                       <label class="form-check-label" for="ancien">
                        Les plus anciens
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="croissant" id="croissant">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="croissant" id="croissant">
                       <label class="form-check-label" for="croissant">
                       de A à Z
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="decroissant" id="decroissant">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="decroissant" id="decroissant">
                       <label class="form-check-label" for="decroissant">
                        de Z à A
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="aimer" id="aimer">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="aimer" id="aimer">
                       <label class="form-check-label" for="aimer">
                        Les plus likés
                       </label>
                         <br>
-                      <input class="form-check-input" class="radio" type="checkbox" value="moin_aimer" id="moin_aimer">
+                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="moin_aimer" id="moin_aimer">
                       <label class="form-check-label" for="moin_aimer">
                        Les moins likés
                       </label>

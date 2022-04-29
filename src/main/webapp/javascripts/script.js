@@ -11,14 +11,6 @@ $(document).ready(function(){
       }
     });
 
-
-    $('#filter_specifique input:checkbox').click(function() {
-        $('#filter_specifique input:checkbox').not(this).prop('checked', false);
-    });
-
-
-    
-
   });
 
  
