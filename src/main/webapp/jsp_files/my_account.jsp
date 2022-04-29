@@ -50,7 +50,7 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="jsp_files/my_account.jsp">Mon Compte</a>
+                        <a class="dropdown-item" href="Servlet_My_Account">Mon Compte</a>
                         <a class="dropdown-item" href="Servlet_Logout">Logout</a>
                     </div>
                 </li>
@@ -145,15 +145,6 @@
                     </h6>
                     <p>
                         <a href="Servlet_Default_Index" class="text-reset">Home</a>
-                    </p>
-                    <p>
-                        <a href="Servlet_Create_Account" class="text-reset"> New User</a>
-                    </p>
-                    <p>
-                        <a href="./jsp_files/new_post.jsp" class="text-reset">New Post </a>
-                    </p>
-                    <p>
-                        <a href="./jsp_files/new_pet.jsp" class="text-reset">New Pet</a>
                     </p>
                 </div>
 

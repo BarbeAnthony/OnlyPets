@@ -202,15 +202,6 @@
             <p>
               <a href="Servlet_Default_Index" class="text-reset">Home</a>
             </p>
-            <p>
-              <a href="Servlet_Create_Account" class="text-reset"> New User</a>
-            </p>
-            <p>
-              <a href="Servlet_New_Post" class="text-reset">New Post </a>
-            </p>
-            <p>
-              <a href="./jsp_files/new_pet.jsp" class="text-reset">New Pet</a>
-            </p>
           </div>
         
           <div class="footer col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

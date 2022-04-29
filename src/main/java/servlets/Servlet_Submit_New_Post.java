@@ -44,8 +44,10 @@ public class Servlet_Submit_New_Post extends HttpServlet {
         postDAO.cloture();
 
         //Erreur si problème d'injection
-        if (newPostID == -1){
+        if (newPostID == -1 || newPostID == 0){
             System.out.println("Erreur, impossible de récupérer l'ID de l'animal crée, impossible de créer un lien animal-post dans la BDD.");
+            //TODO insérer message d'erreur
+            this.getServletContext().getRequestDispatcher("/jsp_files/new_post.jsp").forward(request, response);
             return;
         }
 
@@ -56,7 +58,7 @@ public class Servlet_Submit_New_Post extends HttpServlet {
 
         // Appel jsp suivant
         // TODO : problem de redirection apres avoir creer un post, retour a la page d'acceuil vide
-        this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/Servlet_Default_Index").forward(request, response);
     }
 
 

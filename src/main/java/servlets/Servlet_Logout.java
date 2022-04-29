@@ -23,9 +23,7 @@ public class Servlet_Logout extends HttpServlet {
 
         setCookie(response,"username","lamort",0);
 
-        this.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
-
-
+        this.getServletContext().getRequestDispatcher("/Servlet_Default_Index").forward(request, response);
     }
 
     @Override
