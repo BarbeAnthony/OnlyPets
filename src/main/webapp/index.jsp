@@ -129,12 +129,10 @@
                       </div>
                   </div>
                     <br>
-                    <div class="form-group">
-                      <a id="birthday" class="btn btn-primary" href="" role="button">Joyeux Anniversaire</a>
-                    </div>
-                    <br>
                     <div id="filter_specifique" class="form-group">
-                      <input class="form-check-input" class="radio" type="radio" name="filtre" value="youngerFirst" id="recent">
+                        <h2> Trier par </h2>
+
+                        <input class="form-check-input" class="radio" type="radio" name="filtre" value="youngerFirst" id="recent">
                       <label class="form-check-label" for="recent">
                       Les plus récents
                       </label>
@@ -168,10 +166,13 @@
 
                       <input class="btn-primary" type="submit" value="Filtrer" name="filtrer" id="filtrer">
                 </form>
+                <div class="form-group">
+                    <a id="birthday" class="btn btn-primary" href="" role="button">Joyeux Anniversaire</a>
+                </div>
 
             </div>
             <div class="col-9" id="feed">
-                <h1> Feed </h1>
+                <h1 style="margin-left: 5%;"> Feed  </h1>
                 <c:if test="${not empty sessionScope.username}">
                     <a class="btn btn-primary" href="Servlet_New_Post" role="button">Ajouter un post</a>
                 </c:if>
